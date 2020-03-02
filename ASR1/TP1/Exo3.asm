@@ -97,40 +97,37 @@ ret:	lw $v0 s1
 # Standard startup code.  Invoke the routine main with no arguments.
 
 	.data 0x10000000
-NB1:.byte 1, 2, 8, 9
-    .data 0x10000010
-NB1:.byte 1, 2, 8, 9
-    .data 0x10000020
-AD:.byte 0, 0, 0, 0, 0 
-	.text 
-	
+NB1: .byte 1, 2, 3, 4
+	.data 0x10000010
+NB2: .byte 5, 6, 7, 8
+	.data 0x10000020
+AD:.byte 0, 0, 0, 0, 0
+	.text
 	.globl __start
 
 __start: 
-
 	li $3, 3
-    li $7, 0
+	li $7, 0
 loop:
-    blt $3, 0 exit
-    lb $4, NB1($3)
-    lb $5, NB2($3)
-    add $6, $4, $5
-    add $6, $6, $7
-    bge $6, 10 quit
-    li $7, 0
-    j loin
-    
+	blt $3, 0 exit
+	lb $4, NB1($3)
+	lb $5, NB2($3)
+	add $6, $4, $5
+	add $6, $6, $7
+	bge $6, 10 quit
+	li $7,0
+	j loin
 quit:
-    addi $6, -10
-    li $7, 1
-    
+	addi $6,-10
+	li $7,1
 loin:
-    sb $6, AD+1($3)
-    addi $3, $3, 2
-    j loop
-    
-
+	
+	sb $6, AD+1($3)
+	addi $3, $3, -1
+	j loop
+	
 exit:
-    sb $7, AD
+	
+	sb $7, AD
 	li $v0 10
 	syscall		# syscall 10 (exit)
