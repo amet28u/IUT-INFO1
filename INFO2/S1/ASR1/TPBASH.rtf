@@ -1,0 +1,88 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1561\cocoasubrtf200
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww7880\viewh20960\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Deuxi\'e8me partie :\
+Le Shell : Gestion des processus, redirection d\'92entr\'e9/ sortie\
+\
+1. D\'e9finition\
+2. L\'92ex\'e9cution d\'92une commande UNIX dans un shell\
+3. Caract\'e9ristiques des processus\
+	1. Caract\'e9ristiques g\'e9n\'e9rales\
+	2. Etat d\'92un processus\
+	3. Les entr\'e9es/ sorties d\'92un processus\
+	4. Le code retour d\'92un processus\
+4. Gestion des processus\
+	1. Background et Foreground\
+	2. Les signaux\
+	3. D\'e9tachement d\'92un processus\
+	4. La commande trap\
+	5. Priorit\'e9 d\'92un processus\
+\
+Exercices\
+	Compr\'e9hension g\'e9n\'e9rale\
+	Le processus principale courant s\'92interrompt pendant 2 secondes, le processus est donc inutilisable par la suite de cette commande.\
+	Ps Axl >processus\
+	Id -u Antony \'97> 503\
+	Cat processus | grep \'ab\'a0503\'a0\'bb\
+	La commands sleep 600 interrompt un processus fils pendant 600 secondes.\
+Pour le processus p\'e8re, il attends un signal de r\'e9ponse mais on peut interrompre le fils.\
+Pour le processus fils, celui-ci est interrompu pendant 600 secondes.\
+	\
+	Processus en t\'e2che de fond \
+	La commande bg permet de passer un processus en arri\'e8re-plan, on aurait pu directement le faire en rajoutant un & \'e0 la fin de la commande sleep.\
+\
+	Redirection de sortie et code de retour\
+	On peut stocker les r\'e9sultats donn\'e9s en rajoutant >[NomDuFichier] pour stocker la sortie dans un fichier, n\'e9anmoins, certains fichiers ne peuvent \'eatre copi\'e9 pour cause de manque de permission.\
+On peut stocker les lignes non affect\'e9es dans un fichier ou l\'92on ex\'e9cutera la commande chmod 777 [NomDuFichier] dessus.\
+Le code retour est \'e9gale \'e0 1, car la fonction n\'92a pas pu s\'92ex\'e9cuter normalement pour cause de permission.\
+	\
+	D\'e9tournement de signaux\
+	La commande ps peut \'eatre ex\'e9cut\'e9 avec la combinaison de touches ctrl C avec la commande trap \'91ps\'92 2.\
+Pour la lancer depuis un autre terminal, on utilise la commande tty dans le premier terminal et on rajoute ce r\'e9sultat dans le deuxi\'e8me terminal pr\'e9c\'e9d\'e9 de ps >, cad : ps >/dev/ttys000 dans mon cas.\
+\
+	D\'e9tachement\
+	On peut ex\'e9cuter une commande en la d\'e9tachant du processus d\'92origine avec la commande screen -d sleep 600 mais rien ne se passe apr\'e8s d\'e9connexion.\
+Passer la commands sleep 600 & met la commands en arri\'e8re plan mais elle se fait interrompre si une d\'e9connexion surviens.\
+\
+Rappels de cours et Travaux Pratiques Linux num 3/ 4\
+Premi\'e8re partie : Le Shell: les tubes, les filtres, \'e9criture de scripts\
+\
+1. D\'e9finition\
+	1. Les tubes\
+	2. Les filtres\
+2. Les commandes filtres courants\
+	1. La commande sort\
+	2. La commande grep\
+	3. La commande wc	\
+	4. La commande cut\
+	5. La commande head\
+	6. La commande tail\
+	7. La commande tr\
+	8. La commande tee\
+3. Les scripts Shell\
+	1. Introduction\
+	2. Code retour d\'92un Shell\
+	3. Passage d\'92arguments\
+	4. Les fonctions\
+\
+Deuxi\'e8me partie :\
+Le Shell: programmation et \'e9criture de scripts\
+\
+1. Les expressions conditionnelles et les structures de contr\'f4le\
+	1. La commande test\
+	2. Les structures de contr\'f4le\
+		1. La construction if\
+		2. La construction case\
+		3. La construction select\
+		4. La construction while\
+		5. La construction until\
+		6. Le mot clef break\
+		7. Le mot clef continue\
+		8. Le mot clef exit\
+2. Saisie sur la ligne de commande\
+3. Calcul num\'e9rique\
+4. Gestion \'e9volu\'e9 de la ligne de commande}

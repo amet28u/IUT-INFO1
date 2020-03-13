@@ -1,0 +1,47 @@
+body{
+  font-family: fantasy;
+  background-color: #D6DBDF;
+  display: flex;
+  flex-direction: column;
+}
+header{
+  margin: 5px;
+  padding: 5px;
+  background-color: #EDED4C;
+  border-radius: 10px;
+}
+.group{
+  display: flex;
+  flex-direction: row;
+}
+nav{
+  margin: 5px;
+  padding: 5px;
+  background-color: #18A4C6;
+  border-radius: 10px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+article{
+  margin: 5px;
+  padding: 5px;
+  background-color: #72D65C;
+  border-radius: 10px;
+  flex: 3;
+}
+aside{
+  margin: 5px;
+  padding: 5px;
+  background-color: #18A4C6;
+  border-radius: 10px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+footer{
+  margin: 5px;
+  padding: 5px;
+  background-color: #EDED4C;
+  border-radius: 10px;
+}

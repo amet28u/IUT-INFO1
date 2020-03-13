@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 1</title>
+    <link type="text/css" rel="stylesheet" href="ex2.css">
+    <style>
+      table td, th{
+        border: solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <header>Une grande bannière ici</header>
+    <div class="global">
+      <nav>
+        <ul>
+          <li><a href="#titre2">I.a</a></li>
+          <li><a href="#titre3">I.b</a></li>
+          <li><a href="#titre4">I.b.1</a></li>
+          <li><a href="#titre5">I.b.2</a></li>
+        </ul>
+      </nav>
+      <article>
+        <h1>I - Ceci est un grand titre</h1>
+        <h2 id="titre2">I.a) Introduction</h2>
+        <h2 id="titre3">I.b) Matériel et méthode</h2>
+        <h3 id="titre4">I.b.1 Matériel</h3>
+        <p>Nous avons utilisé du <b>son</b> :
+          <p><audio src="../son.ogg" controls></audio></p>
+        </p>
+        <h3 id="titre5">I.b.2 Méthode</h3>
+        <div class="res">Résultat</div>
+          <table>
+            <tr>
+              <td colspan="2"></td>
+              <td>Avant</td>
+              <td>Après</td>
+            </tr>
+            <tr>
+              <td rowspan="2">Cas</td>
+              <td>1</td>
+              <td>15.5%</td>
+              <td>26.8%</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>23.7%</td>
+              <td>58.3%</td>
+            </tr>
+          </table>
+        </article>
+        <aside>
+          <img src="http://cinestic.fr/wp-content/uploads/2015/12/logo-iut-saint-die-vosges.png" alt="ImageSD">
+        </aside>
+      </div>
+    <footer>Evaluation 16-17</footer>
+  </body>
+</html>

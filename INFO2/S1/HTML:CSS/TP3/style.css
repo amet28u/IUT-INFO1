@@ -1,0 +1,19 @@
+header{
+  vertical-align: middle;
+  text-align: center;
+  background-color: grey;
+  height: 100px;
+  width: 75%;
+}
+article{
+  background-color: grey;
+  width: 50%;
+}
+footer{
+  position: absolute;
+  bottom: 0px;
+  width: 75%;
+  height: 25px;
+  text-align: center;
+  background-color: grey;
+}

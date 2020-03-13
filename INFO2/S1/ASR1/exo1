@@ -1,0 +1,11 @@
+#!/bin/bash
+nbco=`last $USER | head -n-2 | wc -l`
+co1=`last $USER | head -n1 | cut -c40-55`
+co2=`last $USER | head -n2 | tail -n1 | cut -c40-55`
+co3=`last $USER | head -n3 | tail -n1 | cut -c40-55`
+echo "######################################## Information sur la ligne de commande"
+echo "La ligne de commande comporte $# paramètres"
+echo "Execution de la commande: $0"
+echo "Avec les paramètres: $USER"
+echo "######################################## L'utilisateur $USER s'est connecté ${nbco} fois sur $HOSTNAME"
+echo "Ses 3 dernières connexions ont été aux dates suivantes: ${co1}, ${co2} et ${co3}"

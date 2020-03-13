@@ -1,0 +1,43 @@
+body{
+  width: 800px;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin: auto;
+}
+nav{
+  width: 100px;
+  text-shadow: 5px 5px 10px red;
+}
+ul{
+  list-style-type: circle;
+}
+header{
+  padding: 2cm;
+  background-color: #D6DBDF;
+  text-align: center;
+}
+article{
+  text-align: left;
+  background-color: #ABB2B9;
+  margin: 50px;
+  width: 600px;
+
+}
+footer{
+  text-align: center;
+  background-color: #EAEDED;
+}
+.res{
+  text-align: center;
+}
+aside{
+  width: 100px;
+  line-height: 400px;
+}
+img{
+  height: 100px;
+  width: 100px;
+}
+.global{
+  display: flex;
+}
