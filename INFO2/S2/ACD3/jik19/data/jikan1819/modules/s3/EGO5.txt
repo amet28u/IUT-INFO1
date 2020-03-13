@@ -1,0 +1,160 @@
+Couleur 150 170 220
+Info "Droit des technologies de l'information et de la communication"
+Lot CG
+  Tache CG
+    Cout CM
+    Duree 4
+    Etudiant Info2
+    Enseignant PVil
+    Salles 4 SC3 Amphi SConf SC1
+Lot CM
+  AffichageDuNom
+  Numerotation
+  Tache CMmp
+    Cout CM
+    Duree 4
+    Etudiant Info2
+    Enseignant MPri
+    Salles 2 SC3 Amphi
+  Tache CMad
+    Cout CM
+    Duree 4
+    Etudiant Info2
+    Enseignant ADoe
+    Salles 2 SC3 Amphi
+    Repetition 3
+  Tache CMbd
+    Cout CM
+    Duree 4
+    Etudiant Info2
+    Enseignant BDav
+    Salles 2 SC3 Amphi
+    Repetition 3
+Lot Eval
+  AffichageDuNom
+  Tache Eval
+    Cout CM
+    Duree 4
+    Etudiant Info2
+    Enseignant MPri
+    Salle Amphi
+Lot TDx
+  AliasLot TD
+  AffichageDuNom
+  Numerotation
+  Tache TDxmp
+    Cout TD
+    Duree 4
+    Etudiant Info2x
+    Enseignant MPri
+    Salles 5 TD27 SC3 SCC TD26 TD13
+    Repetition 2
+  Tache TDxad
+    Cout TD
+    Duree 4
+    Etudiant Info2x
+    Enseignant ADoe
+    Salles 5 TD27 SC3 SCC TD26 TD13
+    Repetition 2
+  Tache TDxjb
+    Cout TD
+    Duree 4
+    Etudiant Info2x
+    Enseignant JBou
+    Salles 5 TD27 SC3 SCC TD26 TD13
+Lot TDy
+  AliasLot TD
+  AffichageDuNom
+  Numerotation
+  Tache TDymp
+    Cout TD
+    Duree 4
+    Etudiant Info2y
+    Enseignant MPri
+    Salles 5 TD27 SC3 SCC TD26 TD13
+    Repetition 2
+  Tache TDyad
+    Cout TD
+    Duree 4
+    Etudiant Info2y
+    Enseignant ADoe
+    Salles 5 TD27 SC3 SCC TD26 TD13
+    Repetition 2
+  Tache TDyjb
+    Cout TD
+    Duree 4
+    Etudiant Info2y
+    Enseignant JBou
+    Salles 5 TD27 SC3 SCC TD26 TD13
+Lot TPa
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TQaad
+    Cout TP
+    Duree 4
+    Etudiant Info2A
+    Enseignant ADoe
+    Salles 5 TD27 SC3 SCC TD26 TD13
+  Tache TPamp
+    Cout TP
+    Duree 4
+    Etudiant Info2A
+    Enseignant MPri
+    Salles 4 TR Res IG Mul
+    Repetition 2
+  Tache TPaad
+    Cout TP
+    Duree 4
+    Etudiant Info2A
+    Enseignant ADoe
+    Salles 4 TR Res IG Mul
+    Repetition 2
+Lot TPb
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TQbad
+    Cout TP
+    Duree 4
+    Etudiant Info2B
+    Enseignant ADoe
+    Salles 5 TD27 SC3 SCC TD26 TD13
+  Tache TPbmp
+    Cout TP
+    Duree 4
+    Etudiant Info2B
+    Enseignant MPri
+    Salles 4 TR Res IG Mul
+    Repetition 2
+  Tache TPbad
+    Cout TP
+    Duree 4
+    Etudiant Info2B
+    Enseignant ADoe
+    Salles 4 TR Res IG Mul
+    Repetition 2
+Lot TPc
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TQcad
+    Cout TP
+    Duree 4
+    Etudiant Info2C
+    Enseignant ADoe
+    Salles 5 TD27 SC3 SCC TD26 TD13
+  Tache TPcmp
+    Cout TP
+    Duree 4
+    Etudiant Info2C
+    Enseignant MPri
+    Salles 4 TR Res IG Mul
+    Repetition 2
+  Tache TPcad
+    Cout TP
+    Duree 4
+    Etudiant Info2C
+    Enseignant ADoe
+    Salles 4 TR Res IG Mul
+    Repetition 2

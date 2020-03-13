@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head><title>Even ACD1 TP6</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  </head>
+  <body bgcolor="#3FBFAF" text="#4F2F1F">
+    <h2>ACD1 - Canevas du TP 6 : Exceptions</h2>
+    <dl>
+      <dt> L'archive remise en fin de TP (format <tt>zip</tt> ou <tt>tgz</tt>
+           uniquement) devra contenir : </dt>
+      <dd> - le compte-rendu (formats <tt>odt</tt> <b>et</b> <tt>pdf</tt>),
+           </dd>
+      <dd> - les fichiers (sources <tt>.java</tt>) cr&eacute;&eacute;s ou
+           modifi&eacute;s du jeu d'aventure (<tt>Heros.java</tt>,
+           <tt>Aventure.java</tt>, fichier de test, exceptions...)
+           rang&eacute;s dans leur r&eacute;pertoire d'origine, </dd>
+      <dd> - une archive <tt>partie.jar</tt> contenant les ex&eacute;cutables
+           (fichiers <tt>.class</tt>) du paquetage <tt>partie</tt>, </dd>
+      <dd> - la documentation du paquetage <tt>partie</tt> dans un
+           r&eacute;pertoire &agrave; part, </dd>
+      <dd> - et &eacute;ventuellement un r&eacute;pertoire <tt>polygone</tt>
+           avec <u>uniquement</u> les fichiers java de la nouvelle version
+           du paquetage <tt>polygones</tt>. </dd>
+    </dl>
+    <h3>Partie 1 : Utilisation d'exceptions</h3>
+    <p> Pour cette partie, le compte-rendu devra expliquer la gestion des
+        exceptions en r&eacute;ponse &agrave; l'&eacute;nonc&eacute;. </p>
+    <p> Attention, il ne faudra pas laisser de valeurs en dur (valeurs
+        magiques) dans le code. A cet effet, on d&eacute;finira toutes les
+        constantes n&eacute;cessaires pour &eacute;viter de diss&eacute;miner
+        ces valeurs magiques dans le code. </p>
+    <p> Il faudra respecter les bonnes pratiques de codage : documentation et
+        test au fur et &agrave; mesure, code lisible (bien structur&eacute;
+        et a&eacute;r&eacute;), choix de noms explicites, encapsulation... </p>
+    <dl>
+    <dt> Dans un premier temps, il faudra compl&eacute;ter le fichier
+        <tt>Heros.java</tt> plac&eacute; dans un paquetage nomm&eacute;
+        <tt>partie</tt>. </dt>
+    <dd> Mettre &agrave; jour la variable d'environnement <tt>CLASSPATH</tt>
+        pour int&eacute;grer le paquet <tt>rencontre.jar</tt>. </dd>
+    <dd> Puis, compiler le fichier <tt>Aventure.java</tt> et
+        v&eacute;rifier le fonctionnement de la classe produite. Ce fichier
+        devra rester en dehors du paquetage <tt>partie</tt>. </dd>
+    <dd> L'application <tt>Aventure</tt> ne permet pas une mise au point
+        efficace de <tt>Heros.java</tt> en raison du faible contr&ocirc;le
+        des tirages al&eacute;atoires effectu&eacute;s lors des rencontres
+        avec un adversaire. Il faudra donc cr&eacute;er un fichier de test
+        dans le paquetage <tt>partie</tt> pour disposer des services de la
+        classe <tt>RencontreTruquee</tt> permettant de forcer l'issue des
+        rencontres. </dd>
+    </dl>
+    <dl>
+      <dt> Compl&eacute;ter les m&eacute;thodes de la classe
+           <tt>Heros.java</tt> en s'appuyant sur les services de la classe
+           <tt>Rencontre</tt> du paquetage <tt>rencontre</tt>
+           <a href=doc/index.html>document&eacute;es ici</a>. </dt>
+      <dt> Faire des tests exhaustifs pour chacune des m&eacute;thodes
+           &agrave; d&eacute;velopper (pr&eacute;voir un fichier de test
+           par m&eacute;thode). </dt>
+      <dt> A la fin de la mise au point de chaque m&eacute;thode,
+           attendre l'accord de l'enseignant pour passer &agrave; la
+           m&eacute;thode suivante sous peine d'invalidation des points
+           accord&eacute;s pour la m&eacute;thode. </dt>
+    </dl>
+    <dl>
+      <dd> - <tt>attaquer ()</tt> : d'abord choisir une arme, puis invoquer
+           la gestion de l'attaque.
+        <dl>
+          <dd> -> Si on a entr&eacute; autre chose qu'un chiffre pour le
+               choix de l'arme, afficher "Entrer un chiffre !" pour signaler
+               l'incident au joueur, retirer 11 points de vie et retirer 101
+               au temps restant pour la mission; l'attaque ne doit pas
+               se poursuivre. </dd>
+          <dd> -> En cas de KO, afficher l'incident, retirer 23 points de
+               vie et retirer la dur&eacute;e du KO au temps restant pour
+               la mission. </dd>
+          <dd> -> En cas de mise HS, afficher l'incident, retrancher les
+               points de vie perdus lors de l'incident, et retirer 517
+               au temps restant pour la mission. </dd>
+          <dd> -> Sinon, retirer la dur&eacute;e de l'attaque au temps
+               restant pour la mission, puis retirer 11 points de vie. </dd>
+        </dl> </dd>
+    </dl>
+    <dl>
+      <dd> - <tt>negocier ()</tt> : retirer la dur&eacute;e de la
+           n&eacute;gociation (&agrave; g&eacute;rer) au temps restant pour
+           la mission, puis retirer 43 points de vie. </dd>
+    </dl>
+    <dl>
+      <dd> - <tt>entrainer ()</tt> : ajouter 22 points de vie dans la limite
+           du nombre maximal de points de vie et g&eacute;rer une attaque
+           au b&acirc;ton. En cas de succ&egrave;s, retirer la dur&eacute;e
+           de l'attaque, sinon 612, au temps restant pour la mission.
+           </dd>
+    </dl>
+    <dl>
+      <dd> - <tt>danser ()</tt> : mener une attaque gestuelle.
+           En cas d'incident de rencontre (HS, KO ou autre), transf&eacute;rer
+           l'incident &agrave; la m&eacute;thode appelante. Sinon, retirer 23
+           points de vie et retourner une dur&eacute;e de 123 pour le temps
+           qu'a dur&eacute; la danse. Cette m&eacute;thode ne doit pas
+           &ecirc;tre acc&eacute;d&eacute;e des autres classes. </dd>
+    </dl>
+    <dl>
+      <dd> - <tt>ensorceller ()</tt> : ex&eacute;cute une danse de combat
+           sens&eacute;e impressionner l'adversaire, puis :
+        <dl>
+          <dd> -> En l'absence d'incident, retirer la dur&eacute;e de la
+               danse au temps restant pour la mission.
+               </dd>
+          <dd> -> En cas de KO de dur&eacute;e strictement sup&eacute;rieure
+               &agrave; 260, le h&eacute;ros perd tous ses points de vie. </dd>
+          <dd> -> Dans <b>tous</b> les autres cas, le temps restant pour la
+               mission est r&eacute;duit d'une dur&eacute;e de 507, pas plus,
+               pas moins. </dd>
+        </dl> </dd>
+    </dl>
+
+    <h3>Partie 2 : Cr&eacute;ation d'exceptions</h3>
+    <p> Avant d'entamer cette partie, par pr&eacute;caution, archiver la
+        version de <tt>Heros.java</tt> et des sources des tests dans un
+        r&eacute;pertoire <tt>archive</tt>. </p>
+    <p> Rendre <b>priv&eacute;es</b> les m&eacute;thodes <tt>enVie</tt> et
+        <tt>enTemps</tt> des instances de <tt>Heros</tt>. </p>
+    <dl>
+      <dt> Remplacer l'appel &agrave; ces m&eacute;thodes depuis la classe
+           <tt>Aventure</tt> par une gestion d'exceptions sp&eacute;cifiques
+           au jeu d'aventure : </dt>
+      <dd> -> <tt>JeuException</tt> : exceptions du jeu d'aventure </dd>
+      <dd> -> <tt>HerosException</tt> : h&eacute;ros sans vie </dd>
+      <dd> -> <tt>ChronoException</tt> : dur&eacute;e de mission
+           d&eacute;pass&eacute;e </dd>
+    </dl>
+    <p> Toutes ces exceptions devront &ecirc;tre int&eacute;gr&eacute;es
+       dans le paquetage <tt>partie</tt>. </p>
+    <p> L'exception qui termine le jeu devra &ecirc;tre affich&eacute;e
+       pour savoir s'il s'agit de la mort du h&eacute;ros ou de la
+       dur&eacute;e d&eacute;pass&eacute;e. </p>
+
+    <h3>Partie 3 : Finalisation du TP 3 avec une gestion d'exceptions</h3>
+    <p> Dans le temps restant, on pourra finaliser le TP 3 en ajoutant
+        une gestion des exceptions sur les segments, les points ou les
+        polygones, concernant en particulier les constructeurs et les
+        mutateurs (points confondus, triangles plats, ...). </p>
+    </p>
+    <p> Ce travail pourra donner lieu &agrave; un bonus, sous r&eacute;serve
+        que le compte-rendu pr&eacute;cise bien les ajouts qui ont
+        &eacute;t&eacute; faits. </p>
+  </body>
+</html>

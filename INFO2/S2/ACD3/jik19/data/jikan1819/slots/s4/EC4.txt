@@ -1,0 +1,37 @@
+TDx TDx S5 4 12 it4 WM1 WM2 ARic SCC
+TDx TDx S6 2 5 it4 WM1 WM2 ARic SCC
+TDx TDx S7 0 5 it4 WM1 WM2 ARic SCC
+TDx TDx S9 0 12 it4 WM1 WM2 ARic SCC
+TDx TDx S10 2 5 it4 WM1 WM2 ARic SCC
+TDx TDx S11 1 12 it4 WM1 WM2 ARic SCC
+TDx TDx S12 1 5 it4 WM1 WM2 ARic SCC
+TDx TDx S13 1 12 it4 WM1 WM2 ARic SCC
+TDy TDy S5 4 5 it3 IN ARic SCC
+TDy TDy S6 0 1 it3 IN ARic SCC
+TDy TDy S7 0 1 it3 IN ARic SCC
+TDy TDy S9 0 5 it3 IN ARic SCC
+TDy TDy S10 3 16 it3 IN ARic SCC
+TDy TDy S11 1 16 it3 IN ARic SCC
+TDy TDy S12 1 12 it3 IN ARic SCC
+TDy TDy S13 0 12 it3 IN ARic SCC
+TPa TPa S6 3 16 it3 WM1 ARic Alab
+TPa TPa S7 3 1 it3 WM1 ARic Alab
+TPa TPa S11 3 16 it3 WM1 ARic Alab
+TPa TPa S12 4 12 it3 WM1 ARic Alab
+TPa TPaCM S9 4 12 it3 WM1 CMag Alab
+TPa TPaCM S10 3 5 it3 WM1 CMag Alab
+TPa TPaCM S10 4 16 it3 WM1 CMag Amphi
+TPb TPb S6 3 5 it3 WM2 ARic Alab
+TPb TPb S7 3 12 it3 WM2 ARic Alab
+TPb TPb S11 4 1 it3 WM2 ARic Alab
+TPb TPb S12 3 1 it3 WM2 ARic Alab
+TPb TPbCM S9 4 1 it3 WM2 CMag Alab
+TPb TPbCM S10 3 16 it3 WM2 CMag Alab
+TPb TPbCM S10 4 12 it3 WM2 CMag Amphi
+TPc TPc S6 3 12 it3 IN ARic Alab
+TPc TPc S7 3 5 it3 IN ARic Alab
+TPc TPc S11 3 12 it3 IN ARic Alab
+TPc TPc S12 3 12 it3 IN ARic Alab
+TPc TPcCM S9 4 5 it3 IN CMag Alab
+TPc TPcCM S10 3 12 it3 IN CMag Alab
+TPc TPcCM S10 4 5 it3 IN CMag Amphi

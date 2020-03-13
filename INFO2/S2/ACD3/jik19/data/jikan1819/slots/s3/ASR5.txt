@@ -1,0 +1,6 @@
+TPa TPa S2 3 1 it3 Info2A SDie Res
+TPa TPa S3 1 1 it3 Info2A SDie Res
+TPb TPb S2 4 12 it3 Info2B SDie Res
+TPb TPb S3 2 1 it3 Info2B SDie Res
+TPc TPc S2 3 12 it3 Info2C SDie Res
+TPc TPc S3 2 12 it3 Info2C SDie Res

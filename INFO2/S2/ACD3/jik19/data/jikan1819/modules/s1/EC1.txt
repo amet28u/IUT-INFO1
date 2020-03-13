@@ -1,0 +1,105 @@
+Couleur 190 190 110
+Info "Fondamentaux de la communication"
+Lot Eval
+  AliasLot Eval
+  AffichageDuNom
+  Tache Eval
+    Cout CM
+    Duree 4
+    Etudiant Info1
+    Enseignant ARic
+    Salle Amphi
+Lot TDx
+  AliasLot TD
+  AffichageDuNom
+  Numerotation
+  Tache TDx
+    Cout TD
+    Duree 4
+    Etudiant Info1x
+    Enseignant ARic
+    Salle SCC
+    Repetition 7
+Lot TDy
+  AliasLot TD
+  AffichageDuNom
+  Numerotation
+  Tache TDy
+    Cout TD
+    Duree 4
+    Etudiant Info1y
+    Enseignant ARic
+    Salle SCC
+    Repetition 7
+Lot TPa
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TPa
+    Cout TP
+    Duree 4
+    Etudiant Info1a
+    Enseignant ARic
+    Salles 2 Alab Res
+    Repetition 2
+  Tache TQa
+    Cout TP
+    Duree 4
+    Etudiant Info1a
+    Enseignant ARic
+    Salle SCC
+    Repetition 5
+Lot TPb
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TPb
+    Cout TP
+    Duree 4
+    Etudiant Info1b
+    Enseignant ARic
+    Salles 2 Alab Res
+    Repetition 2
+  Tache TQb
+    Cout TP
+    Duree 4
+    Etudiant Info1b
+    Enseignant ARic
+    Salle SCC
+    Repetition 5
+Lot TPc
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TPc
+    Cout TP
+    Duree 4
+    Etudiant Info1c
+    Enseignant ARic
+    Salles 2 Alab Res
+    Repetition 2
+  Tache TQc
+    Cout TP
+    Duree 4
+    Etudiant Info1c
+    Enseignant ARic
+    Salle SCC
+    Repetition 5
+Lot TPd
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TPd
+    Cout TP
+    Duree 4
+    Etudiant Info1d
+    Enseignant ARic
+    Salles 2 Alab Res
+    Repetition 2
+  Tache TQd
+    Cout TP
+    Duree 4
+    Etudiant Info1d
+    Enseignant ARic
+    Salle SCC
+    Repetition 5

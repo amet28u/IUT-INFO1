@@ -1,0 +1,19 @@
+Couleur 204 176 18
+Info "Denis Finck"
+
+ContrainteOccasionnelle interdit S45 0 all
+ContrainteOccasionnelle interdit S46 0 all
+ContrainteOccasionnelle interdit S47 0 all
+ContrainteOccasionnelle interdit S48 0 all
+ContrainteOccasionnelle interdit S49 0 all
+ContrainteOccasionnelle interdit S50 0 all
+ContrainteOccasionnelle interdit S51 0 all
+ContrainteOccasionnelle interdit S2 0 all
+ContrainteOccasionnelle interdit S3 0 all
+ContrainteOccasionnelle interdit S4 0 all
+ContrainteReguliere interdit 1 ooooooooooooxxxxxxxxo
+RelacheContrainte S39 1 ooooooooooooooooxxxxxx
+RelacheContrainte S48 1 ooooooooooooooooxxxxxx
+RelacheContrainte S50 1 ooooooooooooooooxxxxxx
+RelacheContrainte S13 1 ooooooooooooooooxxxxxx
+RelacheContrainte S26 1 ooooooooooooooooxxxxxx

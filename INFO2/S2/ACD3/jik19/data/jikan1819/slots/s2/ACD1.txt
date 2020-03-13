@@ -1,0 +1,55 @@
+CM CM S6 0 1 it3 Info1 PEve Amphi
+CM CM S6 2 1 it3 Info1 PEve SC1
+CM CM S10 0 1 it3 Info1 PEve Amphi
+CM CM S12 1 1 it3 Info1 PEve Amphi
+Eval Eval S14 1 1 it3 Info1 PEve Amphi
+TDx TDx S6 1 12 it3 Info1x PEve SCC
+TDx TDx S6 2 12 it3 Info1x PEve SCC
+TDx TDx S7 3 1 it3 Info1x PEve SCC
+TDx TDx S7 2 5 it3 Info1x PEve SCC
+TDx TDx S9 2 5 it3 Info1x PEve SCC
+TDx TDx S10 3 12 it3 Info1x PEve SConf
+TDx TDx S10 2 5 it3 Info1x PEve TD26
+TDx TDx S11 1 1 it3 Info1x PEve SCC
+TDx TDx S12 0 1 it3 Info1x PEve SCC
+TDx TDx S12 3 12 it3 Info1x PEve SCC
+TDy TDy S6 1 16 it3 Info1y PEve SCC
+TDy TDy S6 2 16 it3 Info1y PEve SCC
+TDy TDy S7 3 5 it3 Info1y PEve SCC
+TDy TDy S7 2 1 it3 Info1y PEve SCC
+TDy TDy S9 3 5 it3 Info1y PEve SCC
+TDy TDy S10 3 16 it3 Info1y PEve SConf
+TDy TDy S10 2 1 it3 Info1y PEve TD26
+TDy TDy S11 1 5 it3 Info1y PEve SCC
+TDy TDy S12 0 5 it3 Info1y PEve SCC
+TDy TDy S12 3 16 it3 Info1y PEve SCC
+TPa TPa S7 1 12 it3 Info1a PEve Mul
+TPa TPa S9 2 12 it3 Info1a PEve Mul
+TPa TPa S10 1 12 it3 Info1a PEve Mul
+TPa TPa S11 1 12 it3 Info1a PEve Mul
+TPa TPa S12 1 12 it3 Info1a PEve TR
+TPa TPa S14 1 12 it3 Info1a PEve IN
+TPb TPb S7 1 12 it3 Info1b PVil TR
+TPb TPb S9 1 1 it3 Info1b PVil Res
+TPb TPb S10 1 12 it3 Info1b PVil Res
+TPb TPb S11 1 12 it3 Info1b PVil IG
+TPb TPb S12 1 12 it3 Info1b PVil Res
+TPb TPb S14 1 12 it3 Info1b PVil Mul
+TPc TPc S6 3 12 it3 Info1c DBol IG
+TPc TPc S9 2 1 it3 Info1c DBol IG
+TPc TPc S10 1 1 it3 Info1c DBol Res
+TPc TPc S11 1 12 it3 Info1c DBol TR
+TPc TPc S12 1 12 it3 Info1c DBol IN
+TPc TPc S14 1 12 it3 Info1c DBol IG
+TPd TPd S6 3 12 it3 Info1d PEve Mul
+TPd TPd S9 1 12 it3 Info1d PEve TR
+TPd TPd S10 2 12 it3 Info1d PEve Mul
+TPd TPd S11 2 12 it3 Info1d PEve IN
+TPd TPd S12 2 12 it3 Info1d PEve Mul
+TPd TPd S14 3 1 it3 Info1d PEve Mul
+Ski ski S7 0 1 it1 DBol
+Ski ski S7 0 12 it1 DBol
+Ski ski S7 1 12 it1 DBol
+Ski ski S7 2 1 it1 DBol
+Ski ski S7 2 12 it1 DBol
+Ski ski2 S7 1 1 it1 DBol

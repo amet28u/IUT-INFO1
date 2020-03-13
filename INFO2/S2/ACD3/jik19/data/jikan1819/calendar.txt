@@ -1,0 +1,38 @@
+Annee 2018
+PremiereSemaine 36
+NbSemaines 43
+DureeSemaines 6
+ContrainteReguliere 0 xooooooooxxxooooooooxxxx
+ContrainteReguliere 1 xooooooooxxxooooooooxxxx
+ContrainteReguliere 2 xooooooooxxxooooooooxxxx
+ContrainteReguliere 3 xooooooooxxxooooooooxxxx
+ContrainteReguliere 4 xooooooooxxxooooooooxxxx
+ContrainteReguliere 5 ooooooooxxxxxxxxxxxxxxxx
+ContrainteOccasionnelle S39 0 xooooooooxxxooooooooooxx
+ContrainteOccasionnelle S37 0 oooooooooxxoooooooooxxxx
+ContrainteOccasionnelle S38 0 oooooooooxxoooooooooxxxx
+ContrainteOccasionnelle S38 4 oooooooooxxxooooooooxxxx
+ContrainteOccasionnelle S39 4 oooooooooxxoooooooooxxxx
+ContrainteOccasionnelle S40 3 oooooooooxxoooooooooxxxx
+ContrainteOccasionnelle S41 3 xooooooooxxoooooooooxxxx
+ContrainteOccasionnelle S42 3 oooooooooxxxooooooooxxxx
+ContrainteOccasionnelle S43 3 oooooooooxxoooooooooxxxx
+ContrainteOccasionnelle S46 3 oooooooooxxoooooooooxxxx
+ContrainteOccasionnelle S47 0 oooooooooxxoooooooooxxxx
+ContrainteOccasionnelle S49 3 xooooooooxxoooooooooxxxx
+ContrainteOccasionnelle S49 4 oooooooooxxoooooooooxxxx
+ContrainteOccasionnelle S50 2 xooooooooxxxooooooooooxx
+ContrainteOccasionnelle S9 5 xxoooooooooooooooooxxxxx
+ContrainteOccasionnelle S21 3 oooooooooxxxooooooooxxxx
+Vacances 44
+Vacances 52
+Vacances 1
+Vacances 8
+Vacances 15
+Vacances 16
+Ferie 17 0
+Ferie 18 2
+Ferie 19 2
+Ferie 22 3
+Ferie 24 0
+Journees 30 16 24

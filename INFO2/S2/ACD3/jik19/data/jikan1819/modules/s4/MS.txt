@@ -1,0 +1,44 @@
+Couleur 236 186 105
+Info "Complements d'informatique en vue d'une reinsertion immediate"
+Lot TD
+  AliasLot TD
+  AffichageDuNom
+  Numerotation
+  Tache CM
+    Cout CM
+    Duree 4
+    Etudiant WM1
+    Etudiant WM2
+    Enseignant PFlo
+    Salle Tim
+    Repetition 3
+  Tache TD
+    Cout TD
+    Duree 4
+    Etudiant WM1
+    Etudiant WM2
+    Enseignant PFlo
+    Salle Tim
+    Repetition 4
+Lot TPa
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TPa
+    Cout TP
+    Duree 8
+    Etudiant WM1
+    Enseignant PFlo
+    Salle Tim
+    Repetition 4
+Lot TPb
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TPb
+    Cout TP
+    Duree 8
+    Etudiant WM2
+    Enseignant PFlo
+    Salle Tim
+    Repetition 4

@@ -1,0 +1,44 @@
+Couleur 160 130 250
+Info "Modelisation geometrique 3D"
+MasquageDuNom
+Lot EV
+  AliasLot MG-EV
+  AffichageDuNom
+  Tache EV
+    Cout CM
+    Duree 4
+    Etudiant IN
+    Enseignant PEve
+    Salles 3 SConf SCC SC3
+Lot TD
+  AliasLot MG
+  AffichageDuNom
+  Numerotation
+  Tache CM
+    Cout CM
+    Duree 4
+    Etudiant IN
+    Enseignant PEve
+    Salles 3 SCC SC3 TD13
+    Repetition 2
+  Tache TD
+    Cout TD
+    Duree 4
+    Etudiant IN
+    Enseignant PEve
+    Salles 4 SCC SC3 TD27 TD13
+    Repetition 4
+  Tache TP
+    Cout TP
+    Duree 4
+    Etudiant IN
+    Enseignant PEve
+    Salles 4 IG TR Mul IN
+    Repetition 6
+  Tache TQ
+    Cout TP
+    Duree 4
+    Etudiant IN
+    Enseignant PEve
+    Salles 4 SCC SC3 TD13 TD26
+    Repetition 2

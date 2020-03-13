@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head><title>Even ACD1 TP1</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  </head>
+  <body bgcolor="#3FBFAF" text="#4F2F1F">
+    <h2>ACD1 - Canevas du TP 1 : Vie et mort des instances</h2>
+    <b>Organisation des TP</b>
+    <dl>
+      <li> Les programmes (fichiers <em>.java</em>) seront cr&eacute;&eacute;s
+           &agrave; partir d'un simple &eacute;diteur de texte (par exemple
+           <tt>gedit</tt> ou <tt>xemacs</tt>). </li>
+      <li> Penser &agrave; param&eacute;trer les indentations &agrave; 2 ou
+           4 caract&egrave;res au lieu d'une tabulation. </li>
+      <li> On lancera la commande <em>javac</em> dans une console pour les
+           compiler et la commande <em>java</em> pour les ex&eacute;cuter. </li>
+    </dl>
+
+    <b>Exercice 1 : Compilation et ex&eacute;cution</b> (environ 1 heure)
+    <p> Attention, dans cet exercice, il faudra veiller &agrave; bien
+        respecter l'&eacute;nonc&eacute;</p>
+    <dl>
+      <dt> Le code du fichier <em>ProgrammeStupide.java</em> comporte onze
+           erreurs. </dt>
+      <dd> - Compiler ce programme : <em>javac "nom_du_fichier"</em>.
+           Consigner la commande correspondante dans l'&eacute;nonc&eacute;.
+           </dd>
+      <dd> - Corriger les erreurs &agrave; la compilation une par une dans
+             l'ordre dans lequel elles sont signal&eacute;es. Les reporter
+             dans le compte-rendu en indiquant pr&eacute;cis&eacute;ment la
+             nature de l'erreur (probl&egrave;me de syntaxe ?
+             initialisation ? conflit statique / non statique ? ...)
+             et la solution mise en place.
+             Pour r&eacute;gler les conflits de contextes statique / non
+             statique, privil&eacute;gier la solution la plus orient&eacute;e
+             objet.
+             </dd>
+      <dd> - Ex&eacute;cuter ce programme : <em>java "nom_de_la_classe"</em>.
+             Consigner la commande correspondante dans l'&eacute;nonc&eacute;.
+           </dd>
+      <dd> - Corriger les erreurs &agrave; l'ex&eacute;cution. S'assurer en
+             particulier que les tests fonctionnent. </dd>
+      <dd> - Consigner dans le compte-rendu le nom de la valeur
+             attribu&eacute;e &agrave; un nombre infini et le r&eacute;sultat
+             d'une op&eacute;ration sur des nombres infinis. </dd>
+    </dl>
+
+    <b>Exercice 2 : Terminaison des objets</b> (environ 30 minutes)
+    <dl>
+      <dt> Etudier le fichier <em>Terminator.java</em>.
+      <dd> - La m&eacute;thode <em>finalize</em> est appel&eacute;e au moment
+             o&ugrave; l'objet est d&eacute;truit par le ramasse-miettes de
+             Java. </dd>
+      <dd> - Quand on entre la valeur <em>1</em>,
+             on cr&eacute;e 10 terminators et 10 gros objets avec; comme ils
+             ne sont pas stock&eacute;s dans des variables, ils sont
+             imm&eacute;diatement &agrave; la merci du
+             <em>garbage collector</em>. </dd>
+      <dd> - Quand on entre la valeur <em>2</em>, on force la mise en route
+             du <em>garbage collector</em>. </dd>
+      <dd> - Quand on entre la valeur <em>0</em>, on arr&ecirc;te le programme.
+             </dd>
+      <dt> Compiler et ex&eacute;cuter ce programme. </dt>
+      <dd> - Observer ce qui se passe quand on entre la valeur <em>1</em>
+             plusieurs fois de suite. </dd>
+      <dd> - Si rien ne se passe, augmenter la taille des gros objets en
+             relan&ccedil;ant le programme avec en argument un facteur
+             multiplicateur, par exemple : <tt>java Terminator 100</tt> </dd>
+      <dd> - Tester aussi l'effet de la touche <em>2</em> ? </dd>
+      <dt> Consigner dans le compte-rendu la fa&ccedil;on dont le
+           fonctionnement du <em>garbage collector</em> est mis en
+           &eacute;vidence, et les moyens &agrave; disposition pour
+           contr&ocirc;ler le moment o&ugrave; il se d&eacute;clenche et
+           l'ordre dans lequel les objets sont d&eacute;truits. </dt>
+    </dl>
+
+    <b>Exercice 3 : Surchage des m&eacute;thodes et des constructeurs</b>
+    <dl>
+       <dt>a) Ecrire une classe <em>Pixel</em> avec deux attributs entiers
+       <em>x</em> et <em>y</em> et les m&eacute;thodes suivantes : </dt>
+       <dd>- un constructeur <b>principal</b> avec deux entiers en
+             param&egrave;tres, </dd>
+       <dd>- une m&eacute;thode <em>toString</em> donnant les
+             coordonn&eacute;es du pixel. </dd>
+    </dl>
+
+    <dl>
+       <dt>b) Ecrire une classe <em>TestPixel</em> avec un <em>main</em>
+           dans lequel on cr&eacute;e un pixel et on l'affiche. </dt>
+    </dl>
+
+    <dl>
+       <dt>c) Dans la suite du TP, on testera syst&eacute;matiquement les
+          m&eacute;thodes au fur et &agrave; mesure de leur
+          d&eacute;veloppement. </dt>
+       <dd> Compl&eacute;ter la classe <tt>Pixel</tt> avec les m&eacute;thodes
+          suivantes : </dd>
+       <dd>- un constructeur sans param&egrave;tre, construisant le
+             pixel (0,0), </dd>
+       <dd>- un constructeur avec un pixel en param&egrave;tre, </dd>
+       <dd>- un constructeur avec deux r&eacute;els en param&egrave;tres
+             (l'intervalle de troncature est [-0.5, 0.5[), </dd>
+       <dd>- un constructeur avec un tableau de deux r&eacute;els en
+             param&egrave;tre et faisant appel au constructeur
+             pr&eacute;c&eacute;dent, </dd>
+       <dd>- une m&eacute;thode <em>distance</em> retournant la distance
+             euclidienne du pixel &agrave; l'origine :
+             <tt>sqrt (x*x + y*y)</tt>, </dd>
+       <dd>- une m&eacute;thode <em>distance</em> retournant la distance
+             euclidienne &agrave; un autre pixel :
+             <tt>sqrt (&delta;x * &delta;x + &delta;y * &delta;y)</tt>, </dd>
+       <dd>- une m&eacute;thode <em>distanceManhattan</em> retournant la
+          <a href=distances/manhattan.html>distance de Manhattan</a>
+             &agrave; un autre pixel, </dd>
+       <dd>- une m&eacute;thode <em>distanceEchiquier</em> retournant la
+          <a href=distances/echiquier.html>distance de l'&eacute;chiquer</a>
+             &agrave; un autre pixel. </dd>
+    </dl>
+
+    <dl>
+       <dt>d) Ecrire une classe <em>TestGraphique</em> avec un <em>main</em>
+           dans lequel on cr&eacute;e un pixel et on le trace sur un
+           damier. </dt>
+       <dd>
+          Pour le trac&eacute; du pixel, on se servira de la classe
+          <em>Damier</em>.  Une <a href=doc/index.html>documentation</a>
+          est fournie dans le r&eacute;pertoire <tt>doc</tt>.
+          Le programme de test d'utilisation de cette classe, contenu
+          dans le fichier <em>TestDamier.java</em>, s'appuie sur la classe
+          <em>Saisie</em>, &eacute;galement document&eacute;e dans le
+          r&eacute;pertoire <tt>doc</tt>. </dd>
+    </dl>
+
+    <dl>
+       <dt>e) Dans la suite du TP, on ajoutera aussi des tests graphiques
+           syst&eacute;matiques au fur et &agrave; mesure du
+           d&eacute;veloppement.
+       <dd> Compl&eacute;ter la classe <tt>Pixel</tt> avec les m&eacute;thodes
+          suivantes : </dd>
+       <dd>- une m&eacute;thode <em>midpixel</em> retournant le pixel
+             &agrave; mi-distance euclidienne d'un autre pixel, </dd>
+       <dd>- une m&eacute;thode <em>midpixelManhattan</em> retournant les
+             pixels &agrave; mi-distance de Manhattan d'un autre pixel, </dd>
+       <dd>- une m&eacute;thode <em>midpixelEchiquier</em> retournant les
+             pixels &agrave; mi-distance de l'&eacute;chiquier d'un autre
+             pixel. </dd>
+    </dl>
+  </body>
+</html>

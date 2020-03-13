@@ -1,0 +1,117 @@
+Couleur 250 60 80
+Info "Methodologie de la production d'applications"
+Lot CM
+  AffichageDuNom
+  Numerotation
+  Tache CMe
+    Cout CM
+    Duree 4
+    Etudiant Info2
+    Enseignant BDav
+    Salles 2 SC3 Amphi
+    Repetition 2
+  Tache CMi
+    Cout CM
+    Duree 4
+    Etudiant Info2
+    Enseignant DFin
+    Salles 2 SC3 Amphi
+    Repetition 3
+Lot Eval
+  AffichageDuNom
+  Tache Evale
+    Cout CM
+    Duree 4
+    Etudiant Info2
+    Enseignant BDav
+    Salle Amphi
+Lot TDx
+  AliasLot TD
+  AffichageDuNom
+  Numerotation
+  Tache TDex
+    Cout TD
+    Duree 4
+    Etudiant Info2x
+    Enseignant BDav
+    Salles 5 TD27 SC3 TD13 SCC TD26
+    Repetition 3
+  Tache TDix
+    Cout TD
+    Duree 4
+    Etudiant Info2x
+    Enseignant DFin
+    Salles 6 TR Mul IG TD27 SC3 TD13
+    Repetition 4
+Lot TDy
+  AliasLot TD
+  AffichageDuNom
+  Numerotation
+  Tache TDey
+    Cout TD
+    Duree 4
+    Etudiant Info2y
+    Enseignant BDav
+    Salles 5 TD27 SC3 TD13 SCC TD26
+    Repetition 3
+  Tache TDiy
+    Cout TD
+    Duree 4
+    Etudiant Info2y
+    Enseignant DFin
+    Salles 7 TR Mul IG TD27 SC3 TD13 IN
+    Repetition 4
+Lot TPa
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TPea
+    Cout TP
+    Duree 4
+    Etudiant Info2A
+    Enseignant BDav
+    Salles 4 Res TR IG Mul
+    Repetition 2
+  Tache TPia
+    Cout TP
+    Duree 8
+    Etudiant Info2A
+    Enseignant DFin
+    Salles 4 IG Mul TR Res
+    Repetition 3
+Lot TPb
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TPeb
+    Cout TP
+    Duree 4
+    Etudiant Info2B
+    Enseignant BDav
+    Salles 4 Res TR IG Mul
+    Repetition 2
+  Tache TPib
+    Cout TP
+    Duree 8
+    Etudiant Info2B
+    Enseignant DFin
+    Salles 4 IG Mul TR Res
+    Repetition 3
+Lot TPc
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TPec
+    Cout TP
+    Duree 4
+    Etudiant Info2C
+    Enseignant BDav
+    Salles 4 Res TR IG Mul
+    Repetition 2
+  Tache TPic
+    Cout TP
+    Duree 8
+    Etudiant Info2C
+    Enseignant DFin
+    Salles 4 IG Mul TR Res
+    Repetition 3

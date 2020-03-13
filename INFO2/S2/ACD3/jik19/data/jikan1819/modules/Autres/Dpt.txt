@@ -1,0 +1,192 @@
+Couleur 100 80 200
+Info "Reunions de departement INFO"
+MasquageDuNom
+MasquageDesEns
+Lot Reunion
+  AliasLot Reunion-dpt
+  AffichageDuNom
+  Tache Reu4h
+    Cout GR
+    Duree 8
+    Enseignant ARic
+    Enseignant BDav
+    Enseignant PVil
+    Enseignant DFin
+    Enseignant PAde
+    Enseignant PEve
+    Enseignant DBol
+    Enseignant ACas
+    Enseignant OCas
+    Enseignant SDie
+    Enseignant ABou
+    Enseignant LMor
+    Enseignant EMed
+    Salles 3 SCons SRinfo SCC
+    Repetition 5
+  Tache Reu2h30
+    Cout GR
+    Duree 5
+    Enseignant ARic
+    Enseignant BDav
+    Enseignant PVil
+    Enseignant DFin
+    Enseignant PAde
+    Enseignant PEve
+    Enseignant DBol
+    Enseignant ACas
+    Enseignant OCas
+    Enseignant SDie
+    Enseignant ABou
+    Enseignant LMor
+    Enseignant EMed
+    Salle SCons
+  Tache Reu1h30
+    Cout GR
+    Duree 3
+    Enseignant ARic
+    Enseignant BDav
+    Enseignant PVil
+    Enseignant DFin
+    Enseignant PAde
+    Enseignant PEve
+    Enseignant DBol
+    Enseignant ACas
+    Enseignant OCas
+    Enseignant SDie
+    Enseignant LMor
+    Enseignant EMed
+    Salle SCons
+  Tache Reu3h
+    Cout GR
+    Duree 6
+    Enseignant ARic
+    Enseignant BDav
+    Enseignant PVil
+    Enseignant DFin
+    Enseignant PAde
+    Enseignant PEve
+    Enseignant DBol
+    Enseignant ACas
+    Enseignant OCas
+    Enseignant SDie
+    Enseignant ABou
+    Enseignant LMor
+    Enseignant EMed
+    Salles 3 SCons SRinfo SCC
+    Repetition 2
+  Tache Reu2h
+    Cout GR
+    Duree 4
+    Enseignant ARic
+    Enseignant BDav
+    Enseignant PVil
+    Enseignant DFin
+    Enseignant PAde
+    Enseignant PEve
+    Enseignant DBol
+    Enseignant OCas
+    Enseignant ACas
+    Enseignant SDie
+    Enseignant ABou
+    Enseignant LMor
+    Enseignant EMed
+    Salles 3 SCons SRinfo SCC
+    Repetition 4
+  Tache Reu2hsLM
+    Cout GR
+    Duree 4
+    Enseignant ARic
+    Enseignant BDav
+    Enseignant PVil
+    Enseignant DFin
+    Enseignant PAde
+    Enseignant PEve
+    Enseignant DBol
+    Enseignant OCas
+    Enseignant ACas
+    Enseignant SDie
+    Enseignant ABou
+    Enseignant EMed
+    Salles 3 SCons SRinfo SCC
+Lot ReunionLP
+  AliasLot Reunion-LP
+  AffichageDuNom
+  Tache ReuLP
+    Cout GR
+    Duree 4
+    Enseignant ARic
+    Enseignant PVil
+    Enseignant PEve
+    Enseignant DBol
+    Salle SRinfo
+    Repetition 2
+Lot C13
+  AliasLot CommS1S3
+  AffichageDuNom
+  Tache ComS1S3
+    Cout GR
+    Duree 4
+    Enseignant ARic
+    Enseignant BDav
+    Enseignant PVil
+    Enseignant DFin
+    Enseignant PEve
+    Enseignant DBol
+    Enseignant PAde
+    Enseignant ACas
+    Enseignant OCas
+    Enseignant SDie
+    Enseignant ABou
+    Enseignant LMor
+    Enseignant EMed
+    Salles 3 SCons SRinfo SCC
+Lot C24
+  AliasLot CommS2S4
+  AffichageDuNom
+  Tache ComS2S4
+    Cout GR
+    Duree 4
+    Enseignant ARic
+    Enseignant BDav
+    Enseignant PVil
+    Enseignant DFin
+    Enseignant PEve
+    Enseignant DBol
+    Enseignant PAde
+    Enseignant ACas
+    Enseignant OCas
+    Enseignant SDie
+    Enseignant ABou
+    Enseignant LMor
+    Enseignant EMed
+    Salles 3 SCons SRinfo SCC
+Lot CommS1-ISN
+  AffichageDuNom
+  Tache CommS1-ISN
+    Cout GR
+    Duree 4
+    Enseignant LMor
+    Enseignant PVil
+    Enseignant DBol
+    Enseignant PEve
+    Enseignant ACas
+    Salles 3 SCons SRinfo SCC
+Lot CommS1-I2M
+  AffichageDuNom
+  Tache CommS1-I2M
+    Cout GR
+    Duree 4
+    Enseignant OCas
+    Enseignant ABou
+    Enseignant DFin
+    Salles 3 SCons SRinfo SCC
+Lot ConsPerf-ISN
+  AffichageDuNom
+  Tache ConsPerfISN
+    Cout GR
+    Duree 4
+    Enseignant DBol
+    Enseignant PEve
+    Enseignant PVil
+    Enseignant LMor
+    Salle SRinfo

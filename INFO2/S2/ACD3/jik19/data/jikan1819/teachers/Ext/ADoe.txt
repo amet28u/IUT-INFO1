@@ -1,0 +1,15 @@
+Couleur 184 214 40
+Info "Alexandra Doennlen"
+
+ContrainteReguliere interdit 0 ooooooooooooxxxxxxxxoo
+ContrainteReguliere interdit 1 oxxxxxxxxooooooooooooo
+ContrainteReguliere interdit 3 ooooooooooooxxxxxxxxoo
+ContrainteReguliere interdit 4 all
+ContrainteReguliere interdit 5 all
+ContrainteReguliere indesirable 2 all
+ContrainteReguliere interdit 2 oxxxxxxxxooooooooooooo
+
+RelacheContrainte S46 0 all
+RelacheContrainte S47 0 all
+RelacheContrainte S49 0 all
+RelacheContrainte S50 0 all

@@ -1,0 +1,15 @@
+EV EV S13 2 1 it4 IN DBol IN TD27
+TD CM S6 2 1 it3 IN DBol Mul
+TD CM S11 1 1 it3 IN DBol TR
+TD TD S6 3 5 it3 IN DBol Mul
+TD TD S6 2 5 it3 IN DBol Mul
+TD TD S12 1 1 it3 IN DBol Mul
+TD TD S13 2 5 it3 IN DBol IN
+TD TP S9 2 12 it3 IN DBol Res
+TD TP S10 1 12 it3 IN DBol TR
+TD TP S10 1 16 it3 IN DBol TR
+TD TP S6 2 12 it3 IN DBol Mul
+TD TP S11 1 5 it3 IN DBol TR
+TD TP S12 1 5 it3 IN DBol Mul
+TD TP S9 2 16 it3 IN DBol Res
+TD TP S6 2 16 it3 IN DBol Mul

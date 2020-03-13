@@ -1,0 +1,4 @@
+Couleur 150 200 170
+Info "LP Internet et Medias Mobiles"
+Partition 2
+Groupes 2 EL EM

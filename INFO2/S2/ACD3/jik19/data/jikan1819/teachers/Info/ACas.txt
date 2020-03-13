@@ -1,0 +1,15 @@
+Couleur 230 32 213
+Info "Aline Caspary"
+
+ContrainteReguliere indesirable 0 oxxxxxxxxooooooooooooo
+ContrainteReguliere indesirable 4 ooooooooooooxxxxxxxxoo
+
+ContrainteOccasionnelle interdit S36 1 all
+
+RelacheContrainte S37 0 all
+RelacheContrainte S37 4 xxxxxxxxxxxxxxxxoooooo
+RelacheContrainte S21 0 all
+
+ContrainteOccasionnelle interdit S13 0 all
+ContrainteOccasionnelle interdit S13 1 ooooooooooooxxxxxxxxoo
+ContrainteOccasionnelle interdit S14 3 all

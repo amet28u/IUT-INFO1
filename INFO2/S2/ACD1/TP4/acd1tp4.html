@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head><title>Even ACD1 TP4</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  </head>
+  <body bgcolor="#3FBFAF" text="#4F2F1F">
+    <h2>ACD1 - Canevas du TP 4 : H&eacute;ritage</h2>
+    <dl>
+      <dt>En fin de TP, sera rendue une archive <b>individuelle</b> au
+          format <tt>zip</tt> ou <tt>tgz</tt> contenant : <dt>
+      <dd>- deux comptes-rendus (formats <tt>odt</tt> <b>et</b> <tt>pdf</tt>),
+          </dd>
+      <dd>- un r&eacute;pertoire <tt>navigation</tt> avec <b>uniquement</b>
+          les fichiers java r&eacute;alis&eacute;s dans ce paquetage, </dd>
+      <dd>- un r&eacute;pertoire <tt>tourisme</tt> avec <b>uniquement</b>
+          les fichiers java r&eacute;alis&eacute;s dans ce paquetage, </dd>
+      <dd>- la javadoc des paquetages <tt>navigation</tt> et <tt>tourisme</tt>,
+          </dd>
+      <dd>- et les paquetages <tt>navigation.jar</tt> et <tt>tourisme.jar</tt>
+          contenant les ex&eacute;cutables (fichiers <tt>.class</tt>,
+          <b>pas</b> les sources <tt>.java</tt>).
+          </dd>
+    </dl>
+    <p> Utiliser un simple &eacute;diteur et un terminal pour les
+        compilations, les tests et la g&eacute;n&eacute;ration de la
+        documentation et des paquetages. </p>
+    <p> Les classes ne devront contenir si possible <b>que</b> les attributs
+        et m&eacute;thodes demand&eacute;es dans l'&eacute;nonc&eacute;.
+        Si jamais, une nouvelle m&eacute;thode non demand&eacute;e doit
+        &ecirc;tre ajout&eacute;e, il faudra fournir une justification
+        dans le compte-rendu. </p>
+    <p> Le compte-rendu devra pr&eacute;senter les notions du cours mises
+        en oeuvre dans le cadre de l'exercice,
+        entre autres, l'h&eacute;ritage, la construction des classes
+        d&eacute;riv&eacute;es, le polymorphisme, la surcharge,
+        l'acc&egrave;s &agrave; un membre de la super-classe, l'acc&egrave;s
+        prot&eacute;g&eacute;, le test des types, ..., et les
+        subtilit&eacute;s des r&eacute;ponses donn&eacute;es &agrave;
+        l'&eacute;nonc&eacute;. </p>
+    <p> Ce compte-rendu pourra apporter jusqu'&agrave; <b>2 points de bonus</b>.
+        Inversement, une archive finale incompl&egrave;te ou remplie de
+        donn&eacute;es inutiles pourra produire jusqu'&agrave; <b>2 points de
+        p&eacute;nalit&eacute;</b>. </p>
+    <p> En s'appuyant sur les services des classes du paquetage
+        <tt>voyage</tt>, plusieurs classes organis&eacute;es dans deux
+        paquetages <tt>navigation</tt> et <tt>tourisme</tt> sont &agrave;
+        d&eacute;velopper. </p>
+    <p> <b>Tests d'&eacute;quivalence et clonages</b> : pour chacune des
+        classes &agrave; d&eacute;velopper, l'&eacute;nonc&eacute; indique
+        le test d'&eacute;quivalence des instances &agrave; prendre en
+        compte (&eacute;ventuelle red&eacute;finition de la m&eacute;thode
+        <tt>equals</tt>). Pour le clonage (m&eacute;thode <tt>clone</tt>),
+        le clone doit &ecirc;tre &eacute;quivalent &agrave; l'original,
+        de sorte &agrave; assurer les tests suivants : <br>
+        <tt>objet.equals (objet.clone ()) == true</tt> <br>
+        <tt>object.clone().equals (objet) == true</tt> <br>
+        Ces m&eacute;thodes seront &agrave; r&eacute;&eacute;crire
+        <b>seulement si n&eacute;cessaire</b>. Il faudra indiquer dans le
+        compte-rendu pourquoi il est n&eacute;cessaire ou pourquoi il n'est
+        pas n&eacute;cessaire de red&eacute;finir ces m&eacute;thodes. </p>
+    <p> D&egrave;s qu'une classe sera d&eacute;velopp&eacute;e, vous devrez
+        la d&eacute;poser sur Arche et <b>pr&eacute;venir votre enseignant</b>.
+        Vous ne devrez pas entamer la classe suivante sans l'accord de
+        l'enseignant. </p>
+    <p> Si la classe est parfaitement d&eacute;velopp&eacute;e, vous recevrez
+        l'int&eacute;gralit&eacute; des points pr&eacute;vus (limit&eacute;s
+        &agrave; 20 points). Les erreurs de rigueur, de lisibilit&eacute;,
+        ou de m&eacute;thodologie de d&eacute;veloppement entraineront des
+        p&eacute;nalit&eacute;s et devront &ecirc;tre corrig&eacute;es et la
+        version corrig&eacute;e sera soumise avec la classe suivante.
+        Si les erreurs signal&eacute;es ne sont pas corrig&eacute;es, la
+        classe suivante sera disqualifi&eacute;e (0 point). </p>
+    <dl>
+    <h3> Classe Port (6 points)</h3>
+    <dd>
+      <dl>
+      <dt> Dans un paquetage <tt>navigation</tt>, &eacute;crire une classe
+           <em>Port</em> repr&eacute;sentant un lieu o&ugrave; coule une
+           rivi&egrave;re navigable.
+           Un port <b>est un lieu</b> caract&eacute;ris&eacute; par le
+           nom de la rivi&egrave;re qui l'arrose. </dt>
+      <dt> Inclure : </dt>
+      <dd> - un constructeur avec les noms du lieu et de la rivi&egrave;re,
+           </dd>
+      <dd> - une m&eacute;thode <tt>toString</tt> : le nom du lieu
+           suffix&eacute; par <tt>"-sur-"</tt> suivi du nom de la
+           rivi&egrave;re (exemple : Laval-sur-Vologne),
+           </dd>
+      <dd> - et <b>seulement si n&eacute;cessaire</b> une red&eacute;finition
+         des m&eacute;thodes <tt>equals</tt> et <tt>clone</tt> sachant que
+         deux ports sont &eacute;quivalents s'ils ont le m&ecirc;me nom et
+         s'ils sont sur la m&ecirc;me rivi&egrave;re
+         (attention, en cas de comparaison d'un port avec un simple lieu,
+         il faut juste v&eacute;rifier qu'ils ont le m&ecirc;me nom). </dd>
+      <dt> Cette classe ne devra contenir aucune autre m&eacute;thode. </dt>
+      </dl>
+    </dd>
+    <h3> Classe Marinier (6 points)</h3>
+    <dd>
+      <dl>
+      <dt> Dans le m&ecirc;me paquetage <tt>navigation</tt>, &eacute;crire
+           une classe <em>Marinier</em> dans laquelle, un marinier
+           (ou marin d'eau douce) <b>est un voyageur</b> ne visitant
+           <b>que des ports</b> fluviaux et partant <b>toujours du m&ecirc;me
+           port d'attache</b> (premi&egrave;re &eacute;tape non
+           modifiable). </dt>
+      <dt> Munir cette classe des m&eacute;thodes suivantes : </dt>
+      <dd> - d'un constructeur avec pour unique param&egrave;tre le port
+           d'attache du marinier (sa premi&egrave;re &eacute;tape), </dd>
+      <dd> - d'un m&eacute;thode <tt>joyeux</tt> indiquant si le score du
+           marinier est strictement sup&eacute;rieur &agrave; 3 (constante
+           de classe &agrave; d&eacute;clarer), </dd>
+      <dd> - et, <b>seulement si n&eacute;cessaire</b>, une
+         red&eacute;finition des m&eacute;thodes <tt>equals</tt> et
+         <tt>clone</tt> sachant que deux mariniers sont &eacute;quivalents
+         s'ils ont le m&ecirc;me score et le m&ecirc;me nombre
+         d'&eacute;tapes. </dd>
+      <dt> Attention : bien faire le n&eacute;cessaire pour que le marinier
+         ne puisse pas passer par un lieu qui ne soit pas un port et pour
+         qu'il <b>conserve toujours</b> son port d'attache. Il faudra
+         toutefois <b>red&eacute;finir le moins de m&eacute;thodes
+         possible</b>. </dt>
+      </dl>
+    </dd>
+    <h3> Classe Spot (5 points)</h3>
+    <dd>
+      <dl>
+      <dt> Dans un paquetage <tt>tourisme</tt>, &eacute;crire une classe
+           <em>Spot</em> repr&eacute;sentant un lieu touristique.
+           Un spot <b>est un lieu</b> caract&eacute;ris&eacute; par un
+           nombre d'&eacute;toiles dans le guide Machin, pouvant varier de
+           1 &agrave; 4 (d&eacute;clarer des constantes de classe <tt>MIN</tt>
+           et <tt>MAX</tt> pour stocker ces valeurs).
+           Pour cette application, on peut consid&eacute;rer qu'un lieu sans
+           &eacute;toile n'est pas un <em>Spot</em> mais une simple instance
+           de <em>Lieu</em>. <br>
+           Le nombre d'&eacute;toiles (attribut prot&eacute;g&eacute;
+           nomm&eacute; <tt>etoiles</tt>) ne pourra plus &ecirc;tre
+           modifi&eacute; apr&egrave;s avoir &eacute;t&eacute;
+           initialis&eacute;. <br>
+           Deux spots sont &eacute;quivalents s'ils ont le m&ecirc;me nom. </dt>
+      <dt> Inclure : </dt>
+      <dd> - un constructeur avec un nom et un nombre d'&eacute;toiles
+           en param&egrave;tres, </dd>
+      <dd> - une m&eacute;thode <tt>toString</tt> : le nom du lieu
+           suffix&eacute; par autant de caract&egrave;res <tt>'*'</tt> qu'il
+           y a d'&eacute;toiles (exemple : <tt>Mirecourt**</tt>), </dd>
+      <dd> - une m&eacute;thode <tt>score</tt> retournant le nombre
+           d'&eacute;toiles. </dd>
+      <dd> - une m&eacute;thode <tt>declassement</tt> retournant le lieu
+           correspondant au spot sans &eacute;toile. </dd>
+      <dd> - un constructeur prenant un lieu en param&egrave;tre et
+           lui ajoutant une &eacute;toile.
+        <dl>
+          <dd> -> Un spot avec une &eacute;toile est retourn&eacute; dans le
+            cas d'un simple lieu. </dd>
+          <dd> -> Si le lieu est un spot avec d&eacute;j&agrave; quatre
+            &eacute;toiles, aucune &eacute;toile suppl&eacute;mentaire
+            n'est ajout&eacute;e. </dd>
+        </dl>
+      <dd> - et, <b>seulement si n&eacute;cessaire</b>, une
+         red&eacute;finition des m&eacute;thodes <tt>equals</tt> et
+         <tt>clone</tt> sachant que deux spots sont &eacute;quivalents s'ils
+         ont le m&ecirc;me nom et le m&ecirc;me nombre d'&eacute;toiles. </dd>
+      <dt> Attention : bien faire le n&eacute;cessaire pour que le nombre
+         d'&eacute;toiles soit toujours compris entre 1 et 4. </dt>
+      </dl>
+    </dd>
+    <h3> Classe Touriste (4 points)</h3>
+    <dd>
+      <dl>
+      <dt> Dans le m&ecirc;me paquetage <tt>tourisme</tt>, &eacute;crire une
+           classe <em>Touriste</em> d&eacute;finissant un touriste comme
+           <b>&eacute;tant un voyageur</b>, munie : </dt>
+      <dd> - d'un constructeur, sachant qu'au d&eacute;part, le touriste
+           n'a aucune &eacute;tape, </dd>
+      <dd> - d'une red&eacute;finition de la m&eacute;thode <tt>score</tt>
+           retournant le nombre d'&eacute;toiles cumul&eacute;es, </dd>
+      <dd> - d'une m&eacute;thode <tt>joyeux</tt> indiquant si le nombre
+           d'&eacute;toiles cumul&eacute;es est strictement sup&eacute;rieur
+           au nombre de lieux visit&eacute;s, </dd>
+      <dd> - d'une m&eacute;thode <tt>endurance</tt> retournant le nombre
+           de lieux visit&eacute;s (spots ou non). </dd>
+      <dd> - et, <b>seulement si n&eacute;cessaire</b>, une
+           red&eacute;finition des m&eacute;thodes <tt>equals</tt> et
+           <tt>clone</tt> sachant que deux touristes sont &eacute;quivalents
+           s'ils ont un m&ecirc;me score et un nombre identique d'&eacute;tapes,
+           et s'ils ont la m&ecirc;me satisfaction (tous les deux joyeux ou
+           tous les deux d&eacute;&ccedil;us). </dd>
+      <dt> Cette classe ne devra contenir aucune autre m&eacute;thode. </dt>
+      </dl>
+    </dd>
+    <h3> Classe Plaisancier (2 points)</h3>
+    <dd>
+      <dl>
+      <dt> Dans le paquetage <tt>tourisme</tt>, ajouter une classe
+           <em>Plaisancier</em> d&eacute;finissant un plaisancier comme
+           <b>&eacute;tant un touriste</b> convulsif (sauf le premier)
+           aimant plus particuli&egrave;rement les ports, munie : </dt>
+      <dd> - d'une constante de classe nomm&eacute;e <tt>CONVULSION</tt> et
+           initialis&eacute;e &agrave; 12, indiquant le nombre max de lieux
+           &agrave; visiter &agrave; partir du deuxi&egrave;me plaisancier
+           cr&eacute;&eacute;, </dd>
+      <dd> - de la red&eacute;finition d'une m&eacute;thode (trouver laquelle)
+           pour garantir qu'&agrave; partir du deuxi&egrave;me plaisancier,
+           il sera possible de visiter les 12 lieux (convulsion), </dd>
+      <dd> - une red&eacute;finition de la m&eacute;thode <tt>joyeux</tt>
+           de sorte qu'elle indique si le plaisancier visite strictement plus
+           de ports que d'autres types de lieux, </dd>
+      <dd> - et, <b>seulement si n&eacute;cessaire</b>, une
+         red&eacute;finition des m&eacute;thodes <tt>equals</tt> et
+         <tt>clone</tt> sachant que deux plaisanciers sont &eacute;quivalents
+         s'ils ont un m&ecirc;me score et un nombre identique d'&eacute;tapes,
+         et s'ils ont la m&ecirc;me satisfaction (tous les deux joyeux ou
+         tous les deux d&eacute;&ccedil;us). </dd>
+      </dl>
+    </dd>
+  </body>
+</html>

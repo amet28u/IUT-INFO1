@@ -1,0 +1,218 @@
+Couleur 220 70 150
+Info "Introduction aux interfaces homme-machine"
+Lot CM
+  AffichageDuNom
+  Numerotation
+  Tache CMui
+    Cout CM
+    Duree 4
+    Etudiant Info1
+    Enseignant PVil
+    Salles 3 Amphi SConf SC1
+    Repetition 3
+  Tache CMerg
+    Cout CM
+    Duree 4
+    Etudiant Info1
+    Enseignant PEve
+    Salle Amphi
+    Repetition 2
+Lot Eval
+  AffichageDuNom
+  Tache Eval
+    Cout CM
+    Duree 4
+    Etudiant Info1
+    Enseignant PVil
+    Enseignant PEve
+    Salle Amphi
+Lot TDx
+  AliasLot TD
+  AffichageDuNom
+  Numerotation
+  Tache TDuix
+    Cout TD
+    Duree 4
+    Etudiant Info1x
+    Enseignant PVil
+    Salles 5 SCC SC3 TD27 TD26 TD13
+    Repetition 4
+  Tache TDemx
+    Cout TD
+    Duree 4
+    Etudiant Info1x
+    Enseignant EMic
+    Salle TD13
+  Tache TDerx
+    Cout TD
+    Duree 4
+    Etudiant Info1x
+    Enseignant PEve
+    Salles 6 SCC SC3 TD27 TD26 TD13 IG
+  Tache TDerxNE
+    Cout TD
+    Duree 4
+    Etudiant Info1x
+    Enseignant NEmo
+    Salles 6 SCC SC3 TD27 TD26 TD13 IG
+Lot TDy
+  AliasLot TD
+  AffichageDuNom
+  Numerotation
+  Tache TDuiy
+    Cout TD
+    Duree 4
+    Etudiant Info1y
+    Enseignant PVil
+    Salles 5 SCC SC3 TD27 TD26 TD13
+    Repetition 4
+  Tache TDemy
+    Cout TD
+    Duree 4
+    Etudiant Info1y
+    Enseignant EMic
+    Salle TD13
+  Tache TDery
+    Cout TD
+    Duree 4
+    Etudiant Info1y
+    Enseignant PEve
+    Salles 6 SCC SC3 TD27 TD26 TD13 IG
+  Tache TDeryNE
+    Cout TD
+    Duree 4
+    Etudiant Info1y
+    Enseignant NEmo
+    Salles 5 SCC SC3 TD27 TD26 TD13
+Lot TPa
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TPuia
+    Cout TP
+    Duree 4
+    Etudiant Info1a
+    Enseignant PVil
+    Salles 4 TR IG Mul Res
+    Repetition 3
+  Tache TPuiaEM
+    Cout TP
+    Duree 4
+    Etudiant Info1a
+    Enseignant EMic
+    Salles 3 IG TR Mul
+  Tache TPuia4
+    Cout TP
+    Duree 3
+    Etudiant Info1a
+    Enseignant EMic
+    Salles 3 IG TR Mul
+  Tache TPera
+    Cout TP
+    Duree 4
+    Etudiant Info1a
+    Enseignant PEve
+    Salles 5 Alab TR IG Mul Res
+  Tache TPeraNE
+    Cout TP
+    Duree 4
+    Etudiant Info1a
+    Enseignant NEmo
+    Salles 4 Alab TR IG Mul
+    Repetition 3
+Lot TPb
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TPuib
+    Cout TP
+    Duree 4
+    Etudiant Info1b
+    Enseignant EMic
+    Salles 3 TR IG Mul
+    Repetition 4
+  Tache TPuib4
+    Cout TP
+    Duree 3
+    Etudiant Info1b
+    Enseignant EMic
+    Salles 3 TR IG Mul
+  Tache TPerb
+    Cout TP
+    Duree 4
+    Etudiant Info1b
+    Enseignant PEve
+    Salles 5 Alab TR IG Mul Res
+  Tache TPerbNE
+    Cout TP
+    Duree 4
+    Etudiant Info1b
+    Enseignant NEmo
+    Salles 4 Alab TR IG Mul
+    Repetition 3
+Lot TPc
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TPuic
+    Cout TP
+    Duree 4
+    Etudiant Info1c
+    Enseignant EMic
+    Salles 3 TR IG Mul
+    Repetition 4
+  Tache TPuic4
+    Cout TP
+    Duree 3
+    Etudiant Info1c
+    Enseignant EMic
+    Salles 3 TR IG Mul
+  Tache TPerc
+    Cout TP
+    Duree 4
+    Etudiant Info1c
+    Enseignant PEve
+    Salles 5 Alab TR IG Mul Res
+  Tache TPercNE
+    Cout TP
+    Duree 4
+    Etudiant Info1c
+    Enseignant NEmo
+    Salles 4 Alab TR IG Mul
+    Repetition 3
+Lot TPd
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TPuid
+    Cout TP
+    Duree 4
+    Etudiant Info1d
+    Enseignant PVil
+    Salles 4 TR IG Mul Res
+    Repetition 3
+  Tache TPuidEM
+    Cout TP
+    Duree 4
+    Etudiant Info1d
+    Enseignant EMic
+    Salles 3 TR IG Mul
+  Tache TPuid4
+    Cout TP
+    Duree 3
+    Etudiant Info1d
+    Enseignant EMic
+    Salles 3 TR IG Mul
+  Tache TPerd
+    Cout TP
+    Duree 4
+    Etudiant Info1d
+    Enseignant PEve
+    Salles 5 Alab TR IG Mul Res
+  Tache TPerdNE
+    Cout TP
+    Duree 4
+    Etudiant Info1d
+    Enseignant NEmo
+    Salles 4 Alab TR IG Mul
+    Repetition 3

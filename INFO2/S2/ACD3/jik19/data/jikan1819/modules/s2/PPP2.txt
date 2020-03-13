@@ -1,0 +1,118 @@
+Couleur 170 160 180
+Info "Identifier ses competences"
+Lot PPPtdx
+  AliasLot TD
+  AffichageDuNom
+  Numerotation
+  Tache TDxah
+    Cout TD
+    Duree 4
+    Etudiant Info1x
+    Enseignant AHug
+    Salles 5 SCC TD13 TD27 SC3 TD26
+    Repetition 2
+  Tache TDxac
+    Cout TD
+    Duree 4
+    Etudiant Info1x
+    Enseignant ACas
+    Salles 5 SCC TD13 TD27 SC3 TD26
+  Tache TMxac
+    Cout TD
+    Duree 4
+    Etudiant Info1x
+    Enseignant ACas
+    Salles 2 IG Mul
+    Repetition 3
+Lot PPPtdy
+  AliasLot TD
+  AffichageDuNom
+  Numerotation
+  Tache TDyah
+    Cout TD
+    Duree 4
+    Etudiant Info1y
+    Enseignant AHug
+    Salles 5 SCC TD13 TD27 SC3 TD26
+    Repetition 2
+  Tache TDyac
+    Cout TD
+    Duree 4
+    Etudiant Info1y
+    Enseignant ACas
+    Salles 5 SCC TD13 TD27 SC3 TD26
+  Tache TMyac
+    Cout TD
+    Duree 4
+    Etudiant Info1y
+    Enseignant ACas
+    Salles 2 IG Mul
+    Repetition 3
+Lot PPPtpa
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TQaah
+    Cout TP
+    Duree 4
+    Etudiant Info1a
+    Enseignant ACas
+    Salles 8 SCC TD13 TD27 SC3 TD26 IG Res TR
+  Tache TPaac
+    Cout TP
+    Duree 4
+    Etudiant Info1a
+    Enseignant ACas
+    Salles 4 Res Mul TR IG
+    Repetition 2
+Lot PPPtpb
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TQbah
+    Cout TP
+    Duree 4
+    Etudiant Info1b
+    Enseignant ACas
+    Salles 8 SCC TD13 TD27 SC3 TD26 IG Res TR
+  Tache TPbac
+    Cout TP
+    Duree 4
+    Etudiant Info1b
+    Enseignant ACas
+    Salles 4 Res Mul TR IG
+    Repetition 2
+Lot PPPtpc
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TQcah
+    Cout TP
+    Duree 4
+    Etudiant Info1c
+    Enseignant ACas
+    Salles 8 SCC TD13 TD27 SC3 TD26 IG Res TR
+  Tache TPcac
+    Cout TP
+    Duree 4
+    Etudiant Info1c
+    Enseignant ACas
+    Salles 4 Res Mul TR IG
+    Repetition 2
+Lot PPPtpd
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TQdah
+    Cout TP
+    Duree 4
+    Etudiant Info1d
+    Enseignant ACas
+    Salles 8 SCC TD13 TD27 SC3 TD26 IG Res TR
+  Tache TPdac
+    Cout TP
+    Duree 4
+    Etudiant Info1d
+    Enseignant ACas
+    Salles 4 Res Mul TR IG
+    Repetition 2

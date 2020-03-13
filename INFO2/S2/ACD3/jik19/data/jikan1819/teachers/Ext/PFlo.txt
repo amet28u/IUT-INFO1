@@ -1,0 +1,9 @@
+Couleur 245 198 137
+Info "Pierre Florentin"
+
+ContrainteReguliere interdit 1 all
+ContrainteReguliere indesirable 2 all
+ContrainteReguliere interdit 2 oxxxxxxxxooooooooooooo
+ContrainteReguliere interdit 3 all
+ContrainteReguliere indesirable 4 all
+ContrainteOccasionnelle interdit S7 0 all

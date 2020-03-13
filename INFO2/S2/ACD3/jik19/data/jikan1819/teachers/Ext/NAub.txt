@@ -1,0 +1,6 @@
+Couleur 245 165 157 
+Info "Nicolas Aubry"
+
+ContrainteReguliere indesirable 0 all
+ContrainteReguliere indesirable 1 all
+ContrainteReguliere indesirable 2 all

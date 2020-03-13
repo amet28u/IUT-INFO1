@@ -1,0 +1,12 @@
+CM CM S47 1 5 it3 Info2 DFin SC3
+CM CM S48 4 1 it3 Info2 DFin SC3
+CM CM S48 2 1 it3 Info2 DFin Amphi
+Eval Eval S2 2 1 it3 Info2 DFin Amphi
+TDx TMx S49 3 16 it3 Info2x DFin Mul
+TDx TMx S49 1 1 it3 Info2x DFin Mul
+TDx TMx S50 1 1 it3 Info2x DFin TR
+TDx TMx S50 2 5 it3 Info2x DFin Mul
+TDy TMy S49 3 1 it3 Info2y DFin Mul
+TDy TMy S49 1 5 it3 Info2y DFin Mul
+TDy TMy S50 1 5 it3 Info2y DFin TR
+TDy TMy S50 2 16 it3 Info2y DFin Mul

@@ -1,0 +1,5 @@
+Couleur 220 100 100
+Info "LP Image et Son Numeriques"
+Partition 2
+Groupes 2 INA MN
+Groupes 2 ISNa ISNb

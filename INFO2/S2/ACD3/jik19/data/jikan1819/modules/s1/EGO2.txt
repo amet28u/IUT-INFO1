@@ -1,0 +1,187 @@
+Couleur 60 220 90
+Info "Ponctionnement des organisations"
+Lot CM
+  AffichageDuNom
+  Numerotation
+  Tache CMbd
+    Cout CM
+    Duree 4
+    Etudiant Info1
+    Enseignant BDav
+    Salles 2 Amphi SC3
+    Repetition 2
+  Tache CMmp
+    Cout CM
+    Duree 4
+    Etudiant Info1
+    Enseignant MPri
+    Salles 2 Amphi SC3
+    Repetition 2
+Lot Eval
+  AffichageDuNom
+  Tache Eval
+    Cout CM
+    Duree 4
+    Etudiant Info1
+    Enseignant BDav
+    Salle Amphi
+Lot TDx
+  AliasLot TD
+  AffichageDuNom
+  Numerotation
+  Tache TDxmp
+    Cout TD
+    Duree 4
+    Etudiant Info1x
+    Enseignant MPri
+    Salles 5 TD27 SC3 SCC TD26 TD13
+    Repetition 2
+  Tache TMxmp
+    Cout TD
+    Duree 4
+    Etudiant Info1x
+    Enseignant MPri
+    Salles 4 Res TR IG Mul
+  Tache TMxbd
+    Cout TD
+    Duree 4
+    Etudiant Info1x
+    Enseignant BDav
+    Salles 4 Res TR IG Mul
+  Tache TDxbd
+    Cout TD
+    Duree 4
+    Etudiant Info1x
+    Enseignant BDav
+    Salles 5 TD27 SC3 SCC TD26 TD13
+    Repetition 6
+Lot TDy
+  AliasLot TD
+  AffichageDuNom
+  Numerotation
+  Tache TDymp
+    Cout TD
+    Duree 4
+    Etudiant Info1y
+    Enseignant MPri
+    Salles 5 TD27 SC3 SCC TD26 TD13
+    Repetition 2
+  Tache TMymp
+    Cout TD
+    Duree 4
+    Etudiant Info1y
+    Enseignant MPri
+    Salles 4 Res TR IG Mul
+  Tache TMybd
+    Cout TD
+    Duree 4
+    Etudiant Info1y
+    Enseignant BDav
+    Salles 4 Res TR IG Mul
+  Tache TDybd
+    Cout TD
+    Duree 4
+    Etudiant Info1y
+    Enseignant BDav
+    Salles 5 TD27 SC3 SCC TD26 TD13
+    Repetition 6
+Lot TPa
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TQamp
+    Cout TP
+    Duree 4
+    Etudiant Info1a
+    Enseignant MPri
+    Salles 5 TD27 SC3 SCC TD26 TD13
+    Repetition 2
+  Tache TPabd
+    Cout TP
+    Duree 4
+    Etudiant Info1a
+    Enseignant BDav
+    Salles 4 Res TR IG Mul
+    Repetition 2
+  Tache TQabd
+    Cout TP
+    Duree 4
+    Etudiant Info1a
+    Enseignant BDav
+    Salles 5 TD27 SC3 SCC TD26 TD13
+    Repetition 3
+Lot TPb
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TQbmp
+    Cout TP
+    Duree 4
+    Etudiant Info1b
+    Enseignant MPri
+    Salles 5 TD27 SC3 SCC TD26 TD13
+    Repetition 2
+  Tache TPbbd
+    Cout TP
+    Duree 4
+    Etudiant Info1b
+    Enseignant BDav
+    Salles 4 Res TR IG Mul
+    Repetition 2
+  Tache TQbbd
+    Cout TP
+    Duree 4
+    Etudiant Info1b
+    Enseignant BDav
+    Salles 5 TD27 SC3 SCC TD26 TD13
+    Repetition 3
+Lot TPc
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TQcmp
+    Cout TP
+    Duree 4
+    Etudiant Info1c
+    Enseignant MPri
+    Salles 5 TD27 SC3 SCC TD26 TD13
+    Repetition 2
+  Tache TPcbd
+    Cout TP
+    Duree 4
+    Etudiant Info1c
+    Enseignant BDav
+    Salles 4 Res TR IG Mul
+    Repetition 2
+  Tache TQcbd
+    Cout TP
+    Duree 4
+    Etudiant Info1c
+    Enseignant BDav
+    Salles 5 TD27 SC3 SCC TD26 TD13
+    Repetition 3
+Lot TPd
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TQdmp
+    Cout TP
+    Duree 4
+    Etudiant Info1d
+    Enseignant MPri
+    Salles 5 TD27 SC3 SCC TD26 TD13
+    Repetition 2
+  Tache TPdbd
+    Cout TP
+    Duree 4
+    Etudiant Info1d
+    Enseignant BDav
+    Salles 4 Res TR IG Mul
+    Repetition 2
+  Tache TQdbd
+    Cout TP
+    Duree 4
+    Etudiant Info1d
+    Enseignant BDav
+    Salles 5 TD27 SC3 SCC TD26 TD13
+    Repetition 3

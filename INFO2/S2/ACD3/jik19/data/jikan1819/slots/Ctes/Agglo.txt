@@ -1,0 +1,13 @@
+Agg agg-Amphi S40 1 16 it3 Amphi SCons Res
+Agg agg-Amphi S41 1 16 it3 Amphi SCons Res
+Agg agg-Amphi S38 1 16 it3 Amphi SCons Res
+Agg agg-Amphi S48 0 16 it3 Amphi SCons Res
+Agg agg-Amphi S49 1 16 it3 Amphi SCons Res
+Agg agg-Amphi S5 0 16 it3 Amphi SCons Res
+Agg agg-Amphi S6 1 16 it3 Amphi SCons Res
+Agg agg-Amphi S18 0 16 it3 Amphi SCons Res
+Agg agg-Amphi S19 1 16 it3 Amphi SCons Res
+Agg agg-Amphi S25 0 16 it3 Amphi SCons Res
+Agg agg-Amphi S12 0 16 it3 Amphi SCons Res
+Agg agg-SCons S26 1 16 it2 Amphi Res
+Agg agg-SCons S13 1 16 it2 Amphi Res

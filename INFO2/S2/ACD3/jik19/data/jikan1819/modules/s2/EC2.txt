@@ -1,0 +1,96 @@
+Couleur 20 130 190
+Info "Communication, information et argumentation"
+Lot TDx
+  AliasLot TD
+  AffichageDuNom
+  Numerotation
+  Tache TDx
+    Cout TD
+    Duree 4
+    Etudiant Info1x
+    Enseignant ARic
+    Salles 5 SCC SC3 TD27 TD13 TD26
+    Repetition 8
+Lot TDy
+  AliasLot TD
+  AffichageDuNom
+  Numerotation
+  Tache TDy
+    Cout TD
+    Duree 4
+    Etudiant Info1y
+    Enseignant ARic
+    Salles 5 SCC SC3 TD27 TD13 TD26
+    Repetition 8
+Lot TPa
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TQa
+    Cout TP
+    Duree 4
+    Etudiant Info1a
+    Enseignant ARic
+    Salles 2 SCC TD13
+    Repetition 4
+  Tache TPa
+    Cout TP
+    Duree 4
+    Etudiant Info1a
+    Enseignant ARic
+    Salle Alab
+    Repetition 3
+Lot TPb
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TQb
+    Cout TP
+    Duree 4
+    Etudiant Info1b
+    Enseignant ARic
+    Salles 2 SCC TD13
+    Repetition 4
+  Tache TPb
+    Cout TP
+    Duree 4
+    Etudiant Info1b
+    Enseignant ARic
+    Salle Alab
+    Repetition 3
+Lot TPc
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TQc
+    Cout TP
+    Duree 4
+    Etudiant Info1c
+    Enseignant ARic
+    Salles 2 SCC TD13
+    Repetition 4
+  Tache TPc
+    Cout TP
+    Duree 4
+    Etudiant Info1c
+    Enseignant ARic
+    Salle Alab
+    Repetition 3
+Lot TPd
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TQd
+    Cout TP
+    Duree 4
+    Etudiant Info1d
+    Enseignant ARic
+    Salles 2 SCC TD13
+    Repetition 4
+  Tache TPd
+    Cout TP
+    Duree 4
+    Etudiant Info1d
+    Enseignant ARic
+    Salle Alab
+    Repetition 3

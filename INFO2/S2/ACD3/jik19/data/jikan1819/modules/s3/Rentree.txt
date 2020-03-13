@@ -1,0 +1,34 @@
+Couleur 160 160 90
+Info "Rentree 2e annee et activites annexes"
+MasquageDuNom
+MasquageDesEns
+Lot RentreeS3
+  AliasLot Rentree-S3
+  AffichageDuNom
+  Tache Rentree-S3
+    Cout GR
+    Duree 4
+    Etudiant Info2
+    Enseignant PEve
+    Enseignant ARic
+    Enseignant PVil
+    Enseignant SDie
+    Salle Amphi
+Lot Oriaction
+  AffichageDuNom
+  MasquageDuModule
+  Tache Oriaction
+    Cout GR
+    Duree 8
+    Etudiant Info2
+    Repetition 2
+Lot Parcours
+  AffichageDuNom
+  MasquageDuModule
+  Tache Parcours
+    Cout GR
+    Duree 2
+    Etudiant Info2
+    Enseignant PEve
+    Enseignant DFin
+    Salles 3 Amphi SConf SC3

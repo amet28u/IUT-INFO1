@@ -1,0 +1,98 @@
+Couleur 220 70 150
+Info "Bases de la programmation orientee-objet"
+Lot CM
+  AffichageDuNom
+  Numerotation
+  Tache CM
+    Cout CM
+    Duree 4
+    Etudiant Info1
+    Enseignant PEve
+    Salles 2 Amphi SC1
+    Repetition 4
+Lot Eval
+  AffichageDuNom
+  Tache Eval
+    Cout CM
+    Duree 4
+    Etudiant Info1
+    Enseignant PEve
+    Salle Amphi
+Lot TDx
+  AliasLot TD
+  AffichageDuNom
+  Numerotation
+  Tache TDx
+    Cout TD
+    Duree 4
+    Etudiant Info1x
+    Enseignant PEve
+    Salles 6 SCC SC3 TD27 TD26 TD13 SConf
+    Repetition 11
+Lot TDy
+  AliasLot TD
+  AffichageDuNom
+  Numerotation
+  Tache TDy
+    Cout TD
+    Duree 4
+    Etudiant Info1y
+    Enseignant PEve
+    Salles 6 SCC SC3 TD27 TD26 TD13 SConf
+    Repetition 11
+Lot TPa
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TPa
+    Cout TP
+    Duree 8
+    Etudiant Info1a
+    Enseignant PEve
+    Salles 5 IG TR Mul Res IN
+    Repetition 7
+Lot TPb
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TPb
+    Cout TP
+    Duree 8
+    Etudiant Info1b
+    Enseignant PVil
+    Salles 5 TR IG Mul Res IN
+    Repetition 7
+Lot TPc
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TPc
+    Cout TP
+    Duree 8
+    Etudiant Info1c
+    Enseignant DBol
+    Salles 5 TR IG Mul Res IN
+    Repetition 7
+Lot TPd
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TPd
+    Cout TP
+    Duree 8
+    Etudiant Info1d
+    Enseignant PEve
+    Salles 5 TR IG Mul Res IN
+    Repetition 7
+Lot Ski
+  AliasLot Pistes
+  AffichageDuNom
+  Tache ski
+    Cout GR
+    Duree 8
+    Enseignant DBol
+    Repetition 6
+  Tache ski2
+    Cout GR
+    Duree 4
+    Enseignant DBol

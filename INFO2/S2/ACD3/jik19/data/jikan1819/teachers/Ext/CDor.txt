@@ -1,0 +1,9 @@
+Couleur 239 245 153
+Info "Corinne Dory"
+
+ContrainteReguliere indesirable 0 all
+ContrainteReguliere interdit 0 ooooooooooooxxxxxxxxoo
+ContrainteReguliere interdit 1 ooooooooooooxxxxxxxxoo
+ContrainteReguliere interdit 2 all
+ContrainteReguliere interdit 3 all
+ContrainteReguliere interdit 4 all

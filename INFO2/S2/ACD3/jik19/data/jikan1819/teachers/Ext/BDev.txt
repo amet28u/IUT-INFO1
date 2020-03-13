@@ -1,0 +1,9 @@
+Couleur 146 240 129
+Info "Brigitte Devin"
+
+ContrainteReguliere interdit 0 all
+ContrainteReguliere interdit 2 all
+ContrainteReguliere interdit 4 all
+ContrainteReguliere interdit 5 all
+ContrainteOccasionnelle interdit S45 1 all
+ContrainteOccasionnelle interdit S45 3 all

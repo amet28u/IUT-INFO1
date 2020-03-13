@@ -1,0 +1,287 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head><title>Even ACD1 TP5</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  </head>
+  <body bgcolor="#3FBFAF" text="#4F2F1F">
+    <h2>ACD1 - Canevas du TP 5 : Hi&eacute;rarchie d'objets et interface </h2>
+    <h4>Contexte</h4>
+    <p> Un graphe de sc&egrave;ne est une structure de donn&eacute;es
+        utilis&eacute;e commun&eacute;ment par les outils de
+        mod&eacute;lisation 3D et les jeux vid&eacute;o. Le graphe de
+        sc&egrave;ne structure de fa&ccedil;on hi&eacute;rarchique la
+        repr&eacute;sentation spatiale d'une sc&egrave;ne graphique. </p>
+    <p> Dans ce TP, il s'agit de r&eacute;aliser un graphe de sc&egrave;ne
+        sous sa forme la plus simple : un arbre binaire. La racine de l'arbre
+        repr&eacute;sente l'ensemble de la sc&egrave;ne, et chacune de ses
+        branches correspond &agrave; une partie de cette sc&egrave;ne.
+        Chaque noeud de l'arbre repr&eacute;sente un objet, et chacune de
+        ses branches une partie de cet objet. Les feuilles de l'arbre sont
+        les atomes d'affichage : des primitives graphiques (bo&icirc;te,
+        cylindre, demi-sph&egrave;re, prisme, ...). Les autres noeuds
+        sont des assemblages pr&eacute;cisant o&ugrave; se situe la
+        branche droite par rapport &agrave; la branche gauche. </p>
+    <p> Par exemple, le graphe de sc&egrave;ne suivant repr&eacute;sente
+        Laurel et Hardy fa&ccedil;on Vosges : </p>
+    <p> <img src="vosges/vosges.png" width="454" height="392"> </p>
+    <p> Dans notre cas, les feuilles correspondent &agrave; des primitives
+        volumiques avec leurs param&egrave;tres g&eacute;om&eacute;triques
+        et graphiques, et les noeuds correspondent &agrave; des assemblages.
+        Dans chaque assemblage, on indique la position de la sous-sc&egrave;ne
+        correspondant &agrave; la branche droite par rapport &agrave; la
+        sous-sc&egrave;ne correspondant &agrave; la branche gauche. </p>
+    <h4>Documents &agrave; remettre</h4>
+    <dl>
+      <dt> L'archive (format ZIP ou TGZ uniquement) &agrave; remettre
+           en fin de TP comporte : </dt>
+      <dd> - le compte-rendu (versions ODT + PDF), </dd>
+      <dd> - un r&eacute;pertoire <tt>graphescene</tt> avec uniquement les
+           sources (<tt>.java</tt>) du graphe de sc&egrave;ne
+           r&eacute;alis&eacute;, </dd>
+      <dd> - le fichier <tt>MonAppli.java</tt> actualis&eacute;, </dd>
+      <dd> - le paquetage <tt>graphescene.jar</tt>, </dd>
+      <dd> - la documentation du paquetage <tt>graphescene</tt>, </dd>
+      <dd> - une &eacute;bauche du diagramme de classes du graphe de
+           sc&egrave;ne en version PDF ou papier. </dd>
+    </dl>
+    <h4>Indications pour le compte-rendu</h4>
+    <dl>
+      <dt> Il est vivement conseill&eacute; de compl&eacute;ter le
+           compte-rendu au fur et &agrave; mesure de l'avancement du TP.
+           Ce compte rendu devrait : </dt>
+      <dd> - rappeler le th&egrave;me principal du TP, </dd>
+      <dd> - pr&eacute;ciser ce qui a &eacute;t&eacute; r&eacute;alis&eacute;
+        dans le TP, </dd>
+      <dd> - illustrer les notions de cours mises en oeuvre en s'appuyant
+        sur des exemples tir&eacute;es du TP : </dd>
+      <dl>
+        <dd> - gestion des paquetages, </dd>
+        <dd> - int&eacute;r&ecirc;t de l'utilisation d'une interface, </dd>
+        <dd> - classes et m&eacute;thodes abstraites, </dd>
+        <dd> - types d'acc&egrave;s aux attributs et aux m&eacute;thodes, </dd>
+      </dl>
+      <dd> - justifier les choix techniques (structure de la classe
+           <tt>Scene</tt>, gestion des couleurs, fonctionnement des
+           assemblages, ...). </dd>
+    </dl>
+    <h4>Remise du diagramme de classes final</h4>
+    <dl>
+      <dt> Le diagramme de classes final <b>en version papier</b>
+        (imprim&eacute; ou manuscrit <u>propre</u>) sera &agrave;
+        d&eacute;poser dans le casier de P. Even (entre le secr&eacute;tariat
+        INFO et la direction de l'IUT) <b>vendredi 29 mars &agrave; 18h30
+        au plus tard</b>. </dt>
+      <dd> Il comportera uniquement les classes <tt>Scene</tt>, <tt>Forme</tt>,
+        <tt>Boite</tt>, <tt>Cylindre</tt>, <tt>Assemblage</tt>,
+        <tt>Decalage</tt>, <tt>Bascule</tt> et <tt>AssemblageCompose</tt>. </dd>
+      <dd> Ne pas oublier de mettre son nom. </dd>
+      <dd> Attention : il s'agit d'un <b>travail individuel</b>. Une
+        solution de groupe ne sera pas prise en compte (en particulier pour
+        les travaux r&eacute;alis&eacute;s sur ordinateur. </dd>
+    </dl>
+    <h4>Environnement de travail</h4>
+    <dl>
+      <dt> On utilisera l'hideux Eclipse pour ce TP. </dt>
+      <dd> - Ouvrir Eclipse et cr&eacute;er un nouveau projet Java. </dd>
+      <dd> - Int&eacute;grer les librairies externes JOGL2 et outils3d de la
+        fa&ccedil;on suivante : dans la vue "Projets", clic droit sur le
+        projet, choisir "Build Path", puis "Add External Archives".
+        Pour JOGL2, ajouter les archives <tt>/usr/share/java/jogl2.jar</tt>
+        et <tt>/usr/share/java/gluegen2-rt.jar</tt>. </dd>
+      <dd> - Les classes du graphe de sc&egrave;ne seront
+        ins&eacute;r&eacute;es dans un paquetage <tt>graphescene</tt> au
+        moment de leur cr&eacute;ation. </dd>
+      <dd> - Le fichier <tt>MonAppli.java</tt> restera dans un paquetage par
+        d&eacute;faut. </dd>
+      <dd> - V&eacute;rifier l'installation en compilant et ex&eacute;cutant
+        <tt>MonAppli</tt>. </dd>
+      <dd> - Param&eacute;trer l'outil pour g&eacute;n&eacute;rer
+        automatiquement les en-t&ecirc;tes de fichiers, et pour forcer les
+        indentations &agrave; utiliser des caract&egrave;res espaces et non
+        des tabulations (param&egrave;trage de l'&eacute;diteur). </dd>
+      <dd> - Tester d&egrave;s que possible l'extraction de la documentation
+        Javadoc et de l'archive jar du paquetage (clic droit sur le
+        paquetage). </dd>
+    </dl>
+<!--
+    <h4>Pr&eacute;paration</h4>
+    <p> On utilisera un simple &eacute;diteur. </p>
+    <p> Mettre &agrave; jour la variable <tt>CLASSPATH</tt> par la commande :
+        <br>
+        <tt>export CLASSPATH=$CLASSPATH:/usr/share/java/jogl2.jar:/usr/share/java/gluegen2-rt.jar:/cheminVersOutils3d/outils3d.jar</tt> <br>
+        <tt>cheminVersOutils3d</tt> est le chemin absolu (depuis la
+        racine) du fichier <tt>outils3d.jar</tt>. On peut le
+        r&eacute;cup&eacute;rer par la commande <tt>pwd</tt>. <br>
+        La variable d'environnement ne sera reconnue que dans le
+        terminal o&ugrave; elle a &eacute;t&eacute; d&eacute;finie.
+        Si on ouvre un nouveau terminal, il faut &agrave; nouveau
+        d&eacute;finir cette variable d'environnement.
+        C'est possible d'&eacute;viter cela en pla&ccedil;ant directement
+        la commande dans le fichier <tt>~/.bashrc</tt>. </p>
+    <p> Le fichier <tt>MonAppli.java</tt> est &agrave; la racine de
+        l'application. <br>
+        Les classes du graphe de sc&egrave;ne seront d&eacute;velopp&eacute;es
+        dans un r&eacute;pertoire <tt>graphescene</tt>.
+        On devra placer <tt>package graphescene</tt> au d&eacute;but
+        de chaque fichier (apr&egrave;s l'en-t&ecirc;te). <br>
+        On compile depuis la racine avec la commande :
+        <tt>javac -d . *.java</tt> </p>
+    <p> On utilisera les services du paquetage <tt>outils3d</tt>
+        <a href=doc/index.html>document&eacute; ici</a>. </p>
+    <p> Commencer par v&eacute;rifier l'installation en compilant et
+        ex&eacute;cutant <tt>MonAppli</tt>. </p>
+-->
+
+    <h4>Partie 1 : D&eacute;claration d'une sc&egrave;ne</h4>
+    <p> Ecrire une classe <tt>Scene</tt> permettant de repr&eacute;senter
+        une sc&egrave;ne, sachant seulement qu'<b>une sc&egrave;ne est
+        affichable</b> (voir interface disponible dans le paquetage
+        <tt>outils3d</tt>).  </p>
+
+    <h4>Partie 2 : D&eacute;finition de primitives simples</h4>
+    <p> Chaque sc&egrave;ne, sous-sc&egrave;ne ou primitive (en bref
+        n'importe quel noeud de l'arbre) est consid&eacute;r&eacute;e comme
+        une instance de <tt>Scene</tt>, que l'on peut donc
+        <tt>afficher ()</tt>.
+        Il y aura deux types de sc&egrave;nes (deux classes
+        d&eacute;riv&eacute;es) : <tt>Forme</tt> et <tt>Assemblage</tt>.</p>
+    <dl>
+      <dt> D'abord r&eacute;aliser une classe <tt>Forme</tt> comportant : </dt>
+      <dd> - trois attributs <b>priv&eacute;s</b> <tt>rouge</tt>, <tt>vert</tt>
+           et <tt>bleu</tt>, r&eacute;els sur l'intervalle <tt>[0,1]</tt>
+           permettant de coder une couleur, </dd>
+      <dd> - une m&eacute;thode <tt>colorier (double r, double v, double b)</tt>
+           pour modifier les valeurs des attributs, </dd>
+      <dd> - et une impl&eacute;mentation de la m&eacute;thode
+           <tt>afficher</tt> se contentant de changer la couleur de
+           trac&eacute; (faute d'en savoir plus sur la forme en question).
+    </dl>
+    <dl>
+      <dt> R&eacute;aliser ensuite une forme <tt>Boite</tt> : </dt>
+      <dd> - Une bo&icirc;te a trois attributs :
+           <tt>largeur</tt>, <tt>hauteur</tt> et <tt>profondeur</tt>. </dd>
+      <dd> - Recourir aux services de la classe <tt>Dessinateur</tt> pour
+           afficher les bo&icirc;tes. </dd>
+      <dd> - La classe <tt>MonAppli</tt> permet de tester les classes du graphe
+           de sc&egrave;ne <b>l'une apr&egrave;s l'autre</b> en cr&eacute;ant
+           &agrave; chaque fois une sc&egrave;ne simple que l'on visualise;
+           Choisir des dimensions sur l'intervalle [0,1] pour que la forme
+           doit risible. </dd>
+      <dd> - Pour information, le rep&egrave;re de r&eacute;f&eacute;rence
+           d'une bo&icirc;te est situ&eacute; au centre de sa base;
+           la hauteur correspond &agrave; l'axe 'Y', et la profondeur
+           &agrave; l'axe 'Z'. </dd>
+    </dl>
+    <p> --> Pr&eacute;venir l'enseignant quand c'est au point. </p>
+    <dl>
+      <dt> La gestion des couleurs est identique pour toutes les formes.
+           Elle peut ainsi se faire directement dans la classe <tt>Forme</tt>.
+           </dt>
+      <dd> Le constructeur ne doit pas comporter de param&egrave;tres de
+           couleur (choix de conception retenu pour cette application). </dd>
+      <dd> A la place, les formes seront colori&eacute;es
+           <b>apr&egrave;s les avoir construites</b>. </dd>
+    </dl>
+    <dl>
+      <dt> R&eacute;aliser enfin une forme <tt>Cylindre</tt> : </dt>
+      <dd> - Un cylindre a deux attributs : <tt>rayon</tt> et
+           <tt>hauteur</tt>. </dd>
+      <dd> - Le rep&egrave;re de r&eacute;f&eacute;rence d'un cylindre est
+           situ&eacute; au centre de sa base;
+           la hauteur correspond &agrave; l'axe 'Y'. </dd>
+    </dl>
+    <p> Aucune autre forme ne devra &ecirc;tre r&eacute;alis&eacute;e
+           &agrave; ce stade. </p>
+    <p> --> Pr&eacute;venir l'enseignant quand c'est au point. </p>
+
+    <h4>Partie 3 : D&eacute;finition d'assemblages de sc&egrave;nes</h4>
+    <p> La r&eacute;alisation des assemblages s'appuiera sur les services
+        de la classe <tt>Dessinateur</tt> (pr&eacute;paration, annulation,
+        translation, rotation, ...). </dd>
+    <dl>
+      <dt> R&eacute;aliser une classe <tt>Assemblage</tt> comportant : </dt>
+      <dd> - deux composants pouvant &ecirc;tre des <tt>Forme</tt> ou des
+           <tt>Assemblage</tt> et correspondant aux branches gauche et
+           droite de l'assemblage, </dd>
+      <dd> - une impl&eacute;mentation de la m&eacute;thode <tt>afficher</tt>
+           qui consiste &agrave; appliquer l'assemblage des deux branches
+           de la fa&ccedil;on suivante :
+        <ol>
+        <li> on affiche la branche gauche, </li>
+        <li> on pr&eacute;pare (graphiquement) l'assemblage, </li>
+        <li> on assemble (m&eacute;thode <tt>assembler</tt>), </li>
+        <li> on affiche la branche droite, </li>
+        <li> on annule l'assemblage (pour qu'il ne soit pas propag&eacute;
+             vers le haut de l'arbre). </li>
+        </ol>
+      </dd>
+      <dd> - une d&eacute;claration de la m&eacute;thode <tt>assembler</tt>
+           qui sera par la suite sp&eacute;cialis&eacute;e pour chaque type
+           d'assemblage. </dd>
+    </dl>
+    <p> --> Pr&eacute;venir l'enseignant quand c'est au point. </p>
+    <dl>
+      <dt> R&eacute;aliser et tester une classe <tt>Decalage</tt>. </dt>
+      <dd> - Le d&eacute;colage correspond &agrave; une translation
+           d&eacute;finie par un triplet (<tt>tx</tt>, <tt>ty</tt>,
+           <tt>tz</tt>). </dd>
+    </dl>
+    <p> --> Pr&eacute;venir l'enseignant quand c'est au point. </p>
+    <dl>
+      <dt> R&eacute;aliser et tester une classe <tt>Bascule</tt>. </dt>
+      <dd> - La bascule correspond &agrave; une rotation d&eacute;finie par
+           un axe port&eacute; par un vecteur
+           (<tt>ax</tt>, <tt>ay</tt>, <tt>az</tt>) et un angle <tt>angle</tt>
+           sp&eacute;cifi&eacute; en degr&eacute;s. </dd>
+    </dl>
+    <dl>
+      <dt> R&eacute;aliser et tester une classe <tt>AssemblageCompose</tt>.
+           </dt>
+      <dd> - L'assemblage compos&eacute; correspond &agrave; un
+           encha&icirc;nement de deux assemblages (par exemple un
+           d&eacute;calage suivi d'une bascule). </dd>
+      <dd> - L'affichage de l'assemblage compos&eacute; consiste &agrave;
+           appliquer successivement les deux assemblages composants. </dd>
+      <dd> - Les branches des deux assemblages composants doivent
+           r&eacute;f&eacute;rencer les m&ecirc;mes sc&egrave;nes. </dd>
+    </dl>
+    <p> --> Pr&eacute;venir l'enseignant quand c'est top oint. </p>
+    <h4>Partie 4 : R&eacute;tro-conception</h4>
+    <p> Elaborer un diagramme UML du paquetage <tt>graphescene</tt>
+        r&eacute;alis&eacute;. </p>
+    <h4>Partie 5 : Obtention d'un graphe de sc&egrave;ne plus complet</h4>
+    <p> Le graphe de sc&egrave;ne initial peut <b>ensuite</b> &ecirc;tre
+        compl&eacute;t&eacute; de nouvelles formes et d'assemblages plus
+        sophistiqu&eacute;s (en clair, interdit de s'attaquer &agrave; cette
+        partie tant que la premi&egrave;re partie ne fonctionne pas). <p>
+    <dl>
+      <dt> Du c&ocirc;t&eacute; des formes : </dt>
+      <dd> - le <tt>Cone</tt> avec trois attributs :
+         la <tt>hauteur</tt>, le <tt>rayon de la base</tt> et le
+         <tt>rayon du sommet</tt>; </dd>
+      <dd> - le <tt>Prisme</tt> (moiti&eacute; de bo&icirc;te coup&eacute;e
+         de l'avant en bas vers l'arri&egrave;re en haut). On peut les
+         voir comme des triangles rectangles extrud&eacute;s en largeur.
+         Les attributs sont les m&ecirc;mes que pour les bo&icirc;tes. </dd>
+      <dd> - la <tt>DemiSphere</tt> avec un attribut : le <tt>rayon</tt>; </dd>
+      <dd> - le <tt>Tore</tt> (anneau &agrave; section rectangulaire) avec
+         trois attributs :
+         la <tt>hauteur</tt>, le <tt>rayon int&eacute;rieur</tt> et le
+         <tt>rayon ext&eacute;rieur</tt>. </dd>
+    </dl>
+    <dl>
+      <dt> Du c&ocirc;t&eacute; des assemblages : </dt>
+      <dd> - le <tt>Moteur</tt> : il s'agit d'une bascule dont l'angle
+         est incr&eacute;ment&eacute; &agrave; chaque appel de la
+         m&eacute;thode <tt>afficher</tt>. L'attribut <tt>angle</tt> est
+         remplac&eacute; par un <tt>incr&eacute;ment</tt> qui indique
+         directement la vitesse de rotation du moteur. </dd>
+      <dd> - le <tt>Piston</tt> : il s'agit d'un d&eacute;calage dont
+         la hauteur est incr&eacute;ment&eacute;e d'une valeur <tt>incr</tt>
+         &agrave; chaque appel de la m&eacute;thode <tt>afficher</tt>,
+         entre deux valeurs limites <tt>tymin</tt> et <tt>tymax</tt>. Ces
+         trois param&egrave;tres remplacent le param&egrave;tre <tt>ty</tt>
+         du <tt>Decalage</tt>. </dd>
+    </dl>
+  </body>
+</html>

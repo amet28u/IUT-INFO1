@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="rencontre">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/rencontre.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

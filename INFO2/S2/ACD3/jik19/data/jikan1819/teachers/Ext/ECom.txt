@@ -1,0 +1,8 @@
+Couleur 227 182 125
+Info "Eric Companie"
+
+ContrainteReguliere interdit 0 oxxxxxxxxooooooooooooo
+ContrainteReguliere interdit 1 oxxxxxxxxooooooooooooo
+ContrainteReguliere interdit 2 oxxxxxxxxooooooooooooo
+ContrainteReguliere interdit 3 oxxxxxxxxooooooooooooo
+ContrainteReguliere interdit 4 oxxxxxxxxooooooooooooo

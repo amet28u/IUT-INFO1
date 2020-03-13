@@ -1,0 +1,67 @@
+Couleur 150 200 180
+Info "Contraintes liees a la LP I2M"
+AffichageAdministratif
+MasquageDuNom
+NoTex
+Lot I2M
+  AffichageDuNom
+  Tache I2M-ABou
+    Cout GR
+    Duree 4
+    Enseignant ABou
+    Repetition 36
+  Tache I2M-ARic
+    Cout GR
+    Duree 4
+    Enseignant ARic
+    Repetition 30
+  Tache I2M-PGau
+    Cout GR
+    Duree 4
+    Enseignant PGau
+    Repetition 20
+  Tache I2M-PGue
+    Cout GR
+    Duree 4
+    Enseignant PGue
+    Repetition 20
+  Tache I2M-MPri
+    Cout GR
+    Duree 4
+    Enseignant MPri
+    Repetition 20
+  Tache I2M-BDav
+    Cout GR
+    Duree 4
+    Enseignant BDav
+    Repetition 24
+  Tache I2M-OCas
+    Cout GR
+    Duree 4
+    Enseignant OCas
+    Repetition 34
+  Tache I2M-DFin
+    Cout GR
+    Duree 4
+    Enseignant DFin
+    Repetition 20
+  Tache I2M-PEve
+    Cout GR
+    Duree 4
+    Enseignant PEve
+    Repetition 20
+  Tache I2M-Amphi
+    Cout GR
+    Duree 4
+    Salle Amphi
+    Repetition 20
+  Tache I2M-Res
+    Cout GR
+    Duree 4
+    Salle Res
+    Repetition 30
+  Tache I2M-Tim
+    Cout GR
+    Duree 4
+    Salle Tim
+    Repetition 60

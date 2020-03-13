@@ -1,0 +1,47 @@
+Compte rendu TP1 ACD1
+
+Exercice 1.
+
+I.
+Dans un terminal UNIX : "javac ProgrammeStupide.java"
+
+II.
+1. (Pb type) je remplace 0 par false pour le type booleen
+2. (Pb type) je caste ma valeur 1.76 en reel simple precision
+3. (Pb synthaxe) je remplace "trou" par true
+4. (Pb type) je complète la condition
+"if (laveurs[cpt] % 2 == 1) toutPair = false;" en
+ajoutant "== 1" pour qu'il s'agisse d'une condition et donc
+obtenir un résultat booleen.
+5. (Pb statique) je rajoute "monObjet." pour faire la condition
+(if (! monObjet.toutPair) System.out.print (" pas");)
+6. (Pb statique) je rajoute "monObjet." pour appeler la methode moyenne()
+7. (Pb statique) je rajoute "monObjet." pour utiliser
+la variable "valeurs.length"
+8. (Pb statique) je retire le mot clé "final" à la variable "seuil"
+car elle sera modifiée
+9. (Pb initialisation) j'initialise ma variable i à 0 pour pouvoir
+la comparer à 4 dans mon while
+10. (Pb initialisation) j'initialise ma variable "autreObjet" grace à
+new Decouverte()
+
+III.
+Dans un terminal UNIX : "java Decouverte"
+
+1. je modifie dans la methode "moyenne()" le 4 par valeurs.length
+2. n2 obtient la valeur infini (Infinity)
+3. une operation sur les nombres infini donne NaN
+
+DEBOGAGE
+
+1. je remplace "laveurs" par "valeurs" pour plus de lisibilité
+2. je caste les deux operantes cumul et i avec le type double
+3. je retire le "a" à NaN (Not A Number)
+
+Exercice 2.
+
+System.gc permet d'éliminer des objets pour libérer la mémoire
+ de tout les objets non référencés, c'est l'analogie du free() en C
+
+
+Commande javadoc : "javadoc -charset UTF-8 -private *.java -d DOC"

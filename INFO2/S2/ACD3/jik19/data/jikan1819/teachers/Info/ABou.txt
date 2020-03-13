@@ -1,0 +1,15 @@
+Couleur 204 199 186
+Info "Abdellatif Bourjij"
+
+ContrainteReguliere interdit 2 all
+ContrainteReguliere indesirable 0 all
+
+RelacheContrainte S36 2 all
+RelacheContrainte S4 2 all
+
+ContrainteOccasionnelle interdit S38 3 all
+ContrainteOccasionnelle interdit S38 4 all
+
+ContrainteOccasionnelle interdit S40 3 oxxxxooooooooooooooooo
+RelacheContrainte S42 2 all
+ContrainteOccasionnelle interdit S42 3 ooooooooooooxxxxxxxxoo

@@ -1,0 +1,38 @@
+Couleur 100 230 70
+Info "Traitement d'images"
+MasquageDuNom
+Lot EV
+  AliasLot TI-EV
+  AffichageDuNom
+  Tache EV
+    Cout CM
+    Duree 4
+    Etudiant IN
+    Enseignant DBol
+    Salles 5 SCC SC3 SConf IN Mul
+    Salles 4 TD27 TD13 TD26 IG
+Lot TD
+  AliasLot TI
+  AffichageDuNom
+  Numerotation
+  Tache CM
+    Cout CM
+    Duree 4
+    Etudiant IN
+    Enseignant DBol
+    Salles 4 Mul TR IG Res
+    Repetition 2
+  Tache TD
+    Cout TD
+    Duree 4
+    Etudiant IN
+    Enseignant DBol
+    Salles 5 Mul TR IG Res IN
+    Repetition 4
+  Tache TP
+    Cout TP
+    Duree 4
+    Etudiant IN
+    Enseignant DBol
+    Salles 5 Mul TR IG Res IN
+    Repetition 8

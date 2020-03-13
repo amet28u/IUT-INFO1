@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head><title>Even ACD1 TP2</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  </head>
+  <body bgcolor="#3FBFAF" text="#4F2F1F">
+    <h2>ACD1 - Canevas du TP 2 : R&eacute;alisation de types</h2>
+    <p> En fin de TP, il faudra rendre une archive (seuls formats admis :
+        <tt>zip</tt>, <tt>tar</tt> ou <tt>tgz</tt>) contenant
+        <u>uniquement</u> le compte-rendu (formats <tt>odt</tt> <u>ET</u>
+        <tt>pdf</tt>) et les sources Java des classes r&eacute;alis&eacute;es,
+        y compris les tests. Ne pas rendre la documentation produite par
+        <tt>javadoc</tt>, ni les fichiers <tt>.class</tt>. </p>
+    <p> Attention &agrave; bien respecter les noms impos&eacute;s par
+        l'&eacute;nonc&eacute;, sinon les tests men&eacute;s par l'enseignant
+        ne seront pas concluants. </p>
+    <p> Les fichiers rendus doivent pouvoir &ecirc;tre compil&eacute;s sans
+        erreur (commenter les parties de code d&eacute;fectueuses en cas de
+        doute). </p>
+    <p> Les m&eacute;thodes doivent &ecirc;tre test&eacute;es au fur et
+       &agrave; mesure qu'elles sont d&eacute;velopp&eacute;es. Pour cela,
+       on recommande de faire le premier accesseur tout de suite apr&egrave;s
+       avoir fait le constructeur principal. Pour chacune
+       des classes, les tests seront plac&eacute;s dans un fichier &agrave;
+       part, par exemple <em>TestAngle</em> pour les m&eacute;thodes de la
+       classe <em>Angle</em>. </p>
+    <dl>
+      <dt> Au minimum, le compte-rendu devrait : </dt>
+      <dd> - indiquer le th&egrave;me principal du TP, </dd>
+      <dd> - rappeler les notions de type, d'espace de valeurs
+        (composition, r&eacute;duction) et d'op&eacute;ration,
+        illustr&eacute;es sur des exemples du TP, </dd>
+      <dd> - rappeler la notion de surchage, illustr&eacute;e sur un
+        exemple du TP, </dd>
+      <dd> - rappeler la notion de constructeur principal, illustr&eacute;e
+        sur les exemples du TP,</dd>
+      <dd> - justifier les choix des types retourn&eacute;s ou toute autre
+          particularit&eacute; pertinente du d&eacute;veloppement. </dd>
+    </dl>
+    <b>Exercice 1 : Type Angle</b>
+    <p> Ecrire, <b>tester</b> et <b>documenter</b>
+       (<em>javadoc + en-t&ecirc;te</em>) un type <em>Angle</em>,
+       correctement encapsul&eacute;, &agrave; valeurs sur ]-&pi;, &pi;]. </p>
+    <p> L'espace des valeurs du type doit &ecirc;tre bien
+       contr&ocirc;l&eacute;. </p>
+    <dl>
+       <dt><li>Constructeurs :</li></dt>
+       <dd>- un constructeur <b>principal</b> &agrave; partir d'une valeur
+           r&eacute;elle (en radians), </dd>
+       <dd>- un constructeur &agrave; partir d'une valeur enti&egrave;re
+           (en degr&eacute;s), </dd>
+       <dd>- un constructeur par recopie, </dd>
+    </dl>
+    <dl>
+       <dt><li>Accesseurs :</li></dt>
+       <dd>- une m&eacute;thode de conversion en cha&icirc;ne de
+           caract&egrave;res, </dd>
+       <dd>- une m&eacute;thode <em>enRadians</em> qui retourne la valeur de
+           l'angle en radians, </dd>
+       <dd>- une m&eacute;thode <em>enDegres</em> qui retourne la valeur
+           arrondie &agrave; l'unit&eacute; la plus proche de l'angle en
+           degr&eacute;s, et telle que le r&eacute;sultat du test suivant 
+           soit satisfait : <br>
+           <tt>(new Angle ((new Angle (72)).enDegres ())).enDegres ()
+               == (new Angle (72)).enDegres ()</tt>
+           </dd>
+       <dd>- une m&eacute;thode <em>somme</em> qui retourne la somme
+           avec un autre angle, </dd>
+       <dd>- une m&eacute;thode <em>inverse</em> qui retourne l'inverse
+           de l'angle (l'inverse de &pi;/4 est -&pi;/4). </dd>
+    </dl>
+    <dl>
+       <dt><li>Mutateurs :</li></dt>
+       <dd>- une m&eacute;thode <em>ajouter</em> qui ajoute la valeur d'un
+           autre angle, </dd>
+       <dd>- une m&eacute;thode <em>opposer</em> qui remplace l'angle par
+           son oppos&eacute; sur le cercle trigonom&eacute;trique
+           (l'oppos&eacute; de &pi;/4 est -3&pi;/4). </dd>
+       <dd> NB : ces mutateurs ne doivent pas utiliser les constructeurs. </dd>
+    </dl>
+    </p>
+    <b>Exercice 2 : Type Complexe</b>
+    <p>En s'appuyant sur le type <em>Angle</em> pr&eacute;c&eacute;dent,
+       &eacute;crire, <b>tester</b> et documenter (<em>javadoc</em>) un type
+       <em>Complexe</em> repr&eacute;sentant un nombre complexe <tt>c</tt>
+       par sa partie r&eacute;elle <tt>a</tt> et sa partie imaginaire
+       <tt>b</tt>.  Notation : <tt>c = a + i.b</tt> </p>
+    <p> <img src="complexes/complexes.png" width="451" height="450"></a> </p>
+    <dl>
+       <dt><li>Constructeurs :</li></dt>
+       <dd>- un constructeur <b>principal</b> &agrave; partir de deux valeurs
+           r&eacute;elles pour les parties r&eacute;elles et imaginaires, </dd>
+       <dd>- un constructeur &agrave; partir d'un module et d'un argument, </dd>
+       <dd>- un constructeur &agrave; partir d'une seule valeur r&eacute;elle
+           (r&eacute;el pur), </dd>
+       <dd>- un constructeur &agrave; partir d'un angle (l'argument, le
+           module &eacute;tant fix&eacute; &agrave; 1). </dd>
+<!--
+       <dd>- un constructeur avec trois valeurs r&eacute;elles en
+           param&egrave;tres, qui construit la solution avec la plus grande
+           partie r&eacute;elle ou avec partie imaginaire positive de
+           l'&eacute;quation du second degr&eacute; <i>a.x2 + b.x + c = 0</i>.
+           <br> 
+           La solution attendue est donn&eacute;e par
+           <i>(-b + sqrt(&delta;)) / (2.a)</i>,
+           avec <i>&delta; = b.b-4.a.c</i>. <br>
+           Suggestion : pr&eacute;voir une m&eacute;thode qui retourne la
+           racine d'un nombre, sachant que <i>sqrt(x) = i.sqrt(|x|)</i> si
+           <i>x</i> est n&eacute;gatif. </dd>
+-->
+    </dl>
+    <dl>
+       <dt><li>Accesseurs :</li></dt>
+       <dd>- une m&eacute;thode de conversion en cha&icirc;ne de
+           caract&egrave;res, </dd>
+       <dd>- une m&eacute;thode <em>composantes</em> qui retourne la partie
+           r&eacute;elle et la partie imaginaire, </dd>
+       <dd>- une m&eacute;thode <em>module</em> qui retourne le module, </dd>
+       <dd>- une m&eacute;thode <em>argument</em> qui retourne l'argument, </dd>
+       <dd>- une m&eacute;thode <em>estReelPur</em> qui teste si le complexe
+           est r&eacute;el pur (&agrave; &epsilon; pr&egrave;s), </dd>
+       <dd>- une m&eacute;thode <em>estImaginairePur</em> qui teste si le
+           complexe est imaginaire pur. </dd>
+       <dd>- une m&eacute;thode <em>conjugue</em> qui retourne le complexe
+           conjugu&eacute; : <tt>a -i.b</tt>, </dd>
+       <dd>- une m&eacute;thode <em>somme</em> qui retourne la somme de
+           deux complexes : <tt>(a1 + a2) + i.(b1 + b2)</tt>, </dd>
+       <dd>- une m&eacute;thode <em>produit</em> qui retourne le produit avec
+           un autre complexe :
+           <tt>(a1.a2 - b1.b2) + i (a1.b2 + a2.b1)</tt>, </dd>
+       <dd>- une m&eacute;thode <em>produit</em> qui retourne le produit
+           avec un nombre r&eacute;el;
+       <dd>- une m&eacute;thode <em>inverse</em> qui retourne l'inverse du
+           complexe : <tt>(a - i.b) / (a.a + b.b)</tt>, </dd>
+    </dl>
+    <dl>
+       <dt><li>Mutateurs :</li></dt>
+       <dd>- une m&eacute;thode <em>ajouter</em> qui ajoute la valeur d'un
+           autre complexe, </dd>
+       <dd>- une m&eacute;thode <em>multiplier</em> qui multiplie par un
+           autre complexe, </dd>
+       <dd>- une m&eacute;thode <em>multiplier</em> qui multiplie par un
+           nombre r&eacute;el, </dd>
+       <dd>- une m&eacute;thode <em>inverser</em> qui remplace le complexe
+           par son inverse. </dd>
+    </dl>
+    </p>
+    <dl>
+    <b>Exercice 3 : Refonte du type Complexe</b>
+    <p> Recopier tous les fichiers sources <tt>.java</tt> (y compris les
+        tests) dans un nouveau r&eacute;pertoire <em>v2</em>, puis
+        travailler dans ce r&eacute;pertoire <em>v2</em>. </p>
+    <p> R&eacute;&eacute;crire la classe <em> Complexe.java</em> en prenant
+        cette fois comme attributs un module et un argument.
+        En principe, il suffit de repartir de l'ancien fichier Java, de
+        changer les attributs et de rectifier le contenu des
+        m&eacute;thodes. Les tests r&eacute;alis&eacute;s
+        pr&eacute;c&eacute;demment doivent encore fonctionner. </p>
+  </body>
+</html>

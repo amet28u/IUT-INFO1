@@ -1,0 +1,5 @@
+TD CM S13 1 5 it3 IN ARic SCC
+TD TP S5 3 16 it3 IN ARic Alab
+TD TP S9 2 5 it3 IN ARic Alab
+TD TP S10 2 12 it3 IN ARic Alab
+TD TP S11 3 1 it3 IN ARic Alab

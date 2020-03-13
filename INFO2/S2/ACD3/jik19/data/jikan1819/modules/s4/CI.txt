@@ -1,0 +1,19 @@
+Couleur 180 190 110
+Info "Creativite, image et communication"
+Lot TD
+  AliasLot TD
+  AffichageDuNom
+  Numerotation
+  Tache CM
+    Cout CM
+    Duree 4
+    Etudiant IN
+    Enseignant ARic
+    Salle SCC
+  Tache TP
+    Cout TP
+    Duree 4
+    Etudiant IN
+    Enseignant ARic
+    Salle Alab
+    Repetition 4

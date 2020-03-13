@@ -1,0 +1,21 @@
+Couleur 235 188 0
+Info "Philippe Even"
+
+ContrainteOccasionnelle interdit S17 3 all
+ContrainteOccasionnelle interdit S17 4 all
+ContrainteOccasionnelle interdit S18 0 all
+ContrainteOccasionnelle interdit S18 1 all
+ContrainteOccasionnelle interdit S18 3 all
+ContrainteOccasionnelle interdit S18 4 all
+ContrainteOccasionnelle interdit S19 0 all
+ContrainteOccasionnelle interdit S19 1 all
+ContrainteOccasionnelle interdit S19 3 all
+ContrainteOccasionnelle interdit S19 4 all
+ContrainteOccasionnelle interdit S21 3 all
+ContrainteOccasionnelle interdit S21 4 all
+ContrainteOccasionnelle interdit S22 0 all
+ContrainteOccasionnelle interdit S22 1 all
+ContrainteOccasionnelle interdit S22 2 all
+ContrainteOccasionnelle interdit S22 4 all
+ContrainteOccasionnelle interdit S23 0 all
+ContrainteOccasionnelle interdit S23 1 all

@@ -1,0 +1,95 @@
+Couleur 140 210 110
+Info "Programmation web cote serveur"
+Alias WIM2
+Lot CM
+  AffichageDuNom
+  Numerotation
+  Tache CM
+    Cout CM
+    Duree 4
+    Etudiant Info2
+    Enseignant DFin
+    Salles 3 SC3 Amphi SConf
+    Repetition 7
+Lot Eval
+  AffichageDuNom
+  Tache Eval
+    Cout CM
+    Duree 4
+    Etudiant Info2
+    Enseignant DFin
+    Salles 2 Amphi SConf
+Lot QCMx
+  AliasLot QCM
+  MasquageDuModule
+  AffichageDuNom
+  Tache QCMx
+    Cout CM
+    Duree 4
+    Etudiant Info2x
+    Enseignant DFin
+    Salle IG
+Lot QCMy
+  AliasLot QCM
+  MasquageDuModule
+  AffichageDuNom
+  Tache QCMy
+    Cout GR
+    Duree 4
+    Etudiant Info2y
+    Salle Mul
+Lot TDx
+  AliasLot TD
+  AffichageDuNom
+  Numerotation
+  Tache TDx
+    Cout TD
+    Duree 4
+    Etudiant Info2x
+    Enseignant DFin
+    Salles 4 Mul IG Res TR
+    Repetition 6
+Lot TDy
+  AliasLot TD
+  AffichageDuNom
+  Numerotation
+  Tache TDy
+    Cout TD
+    Duree 4
+    Etudiant Info2y
+    Enseignant PGue
+    Salles 4 Mul IG Res TR
+    Repetition 6
+Lot TPa
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TPa
+    Cout TP
+    Duree 4
+    Etudiant Info2A
+    Enseignant PGue
+    Salles 4 IG Mul TR Res
+    Repetition 6
+Lot TPb
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TPb
+    Cout TP
+    Duree 4
+    Etudiant Info2B
+    Enseignant DFin
+    Salles 4 IG Mul TR Res
+    Repetition 6
+Lot TPc
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TPc
+    Cout TP
+    Duree 4
+    Etudiant Info2C
+    Enseignant PGue
+    Salles 4 IG Mul TR Res
+    Repetition 6

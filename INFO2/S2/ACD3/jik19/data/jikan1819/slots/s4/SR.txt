@@ -1,0 +1,11 @@
+TD EV S12 4 1 it4 WM1 WM2 ABou Res
+TD TD S5 4 5 it4 WM1 WM2 ABou IG
+TD TD S6 4 5 it4 WM1 WM2 ABou IG
+TPa TPa S7 1 12 it3 WM1 ABou Res
+TPa TPa S10 4 1 it3 WM1 ABou Res
+TPa TPa S11 0 1 it3 WM1 ABou Res
+TPa TPa S12 3 1 it3 WM1 ABou Res
+TPb TPb S7 4 12 it3 WM2 ABou Res
+TPb TPb S10 0 12 it3 WM2 ABou Res
+TPb TPb S11 0 12 it3 WM2 ABou Res
+TPb TPb S12 3 12 it3 WM2 ABou Res

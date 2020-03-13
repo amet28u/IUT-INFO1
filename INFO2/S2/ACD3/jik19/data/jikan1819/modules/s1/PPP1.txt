@@ -1,0 +1,129 @@
+Couleur 160 150 170
+Info "Connaitre le monde professionnel"
+Alias PPP1
+Lot Visite
+  AffichageDuNom
+  Tache Visite
+    Cout CM
+    Duree 8
+    Etudiant Info1
+    Enseignant ACas
+    Enseignant AHug
+Lot TDx
+  AliasLot TD
+  AffichageDuNom
+  Numerotation
+  Tache TMxac
+    Cout TD
+    Duree 4
+    Etudiant Info1x
+    Enseignant ACas
+    Salles 4 Res TR IG Mul
+  Tache TDxac
+    Cout TD
+    Duree 4
+    Etudiant Info1x
+    Enseignant ACas
+    Salles 4 SC3 TD27 TD13 SCC
+    Repetition 3
+  Tache TDxah
+    Cout TD
+    Duree 4
+    Etudiant Info1x
+    Enseignant AHug
+    Salles 5 SC3 TD27 TD13 IG SCC
+Lot TDy
+  AliasLot TD
+  AffichageDuNom
+  Numerotation
+  Tache TMyac
+    Cout TD
+    Duree 4
+    Etudiant Info1y
+    Enseignant ACas
+    Salles 4 Res TR IG Mul
+  Tache TDyac
+    Cout TD
+    Duree 4
+    Etudiant Info1y
+    Enseignant ACas
+    Salles 4 SC3 TD27 TD13 SCC
+    Repetition 3
+  Tache TDyah
+    Cout TD
+    Duree 4
+    Etudiant Info1y
+    Enseignant AHug
+    Salles 5 SC3 TD27 TD13 IG SCC
+Lot TPa
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TPaac
+    Cout TP
+    Duree 4
+    Etudiant Info1a
+    Enseignant ACas
+    Salles 4 Res TR IG Mul
+    Repetition 3
+  Tache TPaah
+    Cout TP
+    Duree 4
+    Etudiant Info1a
+    Enseignant ACas
+    Salles 4 Res TR IG Mul
+    Repetition 2
+Lot TPb
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TPbac
+    Cout TP
+    Duree 4
+    Etudiant Info1b
+    Enseignant ACas
+    Salles 4 Res TR IG Mul
+    Repetition 3
+  Tache TPbah
+    Cout TP
+    Duree 4
+    Etudiant Info1b
+    Enseignant ACas
+    Salles 4 Res TR IG Mul
+    Repetition 2
+Lot TPc
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TPcac
+    Cout TP
+    Duree 4
+    Etudiant Info1c
+    Enseignant ACas
+    Salles 5 Res TR IG Mul SCC
+    Repetition 3
+  Tache TPcah
+    Cout TP
+    Duree 4
+    Etudiant Info1c
+    Enseignant ACas
+    Salles 4 Res TR IG Mul
+    Repetition 2
+Lot TPd
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TPdac
+    Cout TP
+    Duree 4
+    Etudiant Info1d
+    Enseignant ACas
+    Salles 4 Res TR IG Mul
+    Repetition 3
+  Tache TPdah
+    Cout TP
+    Duree 4
+    Etudiant Info1d
+    Enseignant ACas
+    Salles 4 Res TR IG Mul
+    Repetition 2

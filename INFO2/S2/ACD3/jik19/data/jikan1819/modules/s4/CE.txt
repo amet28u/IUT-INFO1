@@ -1,0 +1,90 @@
+Couleur 110 237 174
+Info "Atelier de cremation d'entreprise"
+Lot CM
+  AliasLot CM
+  AffichageDuNom
+  Numerotation
+  Tache CM
+    Cout CM
+    Duree 4
+    Etudiant WM1
+    Etudiant WM2
+    Enseignant BDav
+    Salles 3 SC3 SCC TD27
+    Repetition 3
+Lot Eval
+  AffichageDuNom
+  Tache Eval
+    Cout CM
+    Duree 4
+    Etudiant WM1
+    Etudiant WM2
+    Enseignant BDav
+    Salles 3 Amphi SConf SC3
+Lot TD
+  AliasLot TD
+  AffichageDuNom
+  Numerotation
+  Tache TM
+    Cout TD
+    Duree 4
+    Etudiant WM1
+    Etudiant WM2
+    Enseignant BDav
+    Salles 2 Mul IG
+    Repetition 3
+  Tache TDbd
+    Cout TD
+    Duree 4
+    Etudiant WM1
+    Etudiant WM2
+    Enseignant BDav
+    Salles 4 TD27 TD13 SCC SC3
+  Tache TDmm
+    Cout TD
+    Duree 4
+    Etudiant WM1
+    Etudiant WM2
+    Enseignant MMen
+    Salles 4 TD27 TD13 SCC SC3
+  Tache TDjb
+    Cout TD
+    Duree 4
+    Etudiant WM1
+    Etudiant WM2
+    Enseignant JBou
+    Salles 4 TD27 TD13 SCC SC3
+Lot TPa
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TPa
+    Cout TP
+    Duree 4
+    Etudiant WM1
+    Enseignant BDav
+    Salles 4 Mul TR IG Res
+    Repetition 4
+  Tache TQa
+    Cout TP
+    Duree 4
+    Etudiant WM1
+    Enseignant BDav
+    Salles 4 SC3 SCC TD27 TD13
+Lot TPb
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TPb
+    Cout TP
+    Duree 4
+    Etudiant WM2
+    Enseignant BDav
+    Salles 4 Mul TR IG Res
+    Repetition 4
+  Tache TQb
+    Cout TP
+    Duree 4
+    Etudiant WM2
+    Enseignant BDav
+    Salles 4 SC3 SCC TD27 TD13

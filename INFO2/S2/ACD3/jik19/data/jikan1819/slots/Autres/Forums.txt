@@ -1,0 +1,4 @@
+JU-Strasbourg JU1 S5 3 1 it1 ABou
+JU-Strasbourg JU1 S5 3 12 it1 ABou
+JU-Strasbourg JU2 S50 3 1 it1 SDie
+JU-Strasbourg JU2 S50 3 12 it1 SDie

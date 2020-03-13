@@ -1,0 +1,3 @@
+ProIG3D Inter S2 1 12 it5 LMor PVil DBol PEve ACas
+ProIG3D ProIG3D S10 3 1 it6 PEve LMor PVil DBol ACas IN
+ProAMIO ProAMIO S10 0 1 it6 EMed OCas DFin ABou PGue SC3

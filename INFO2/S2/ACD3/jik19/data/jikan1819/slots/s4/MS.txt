@@ -1,0 +1,15 @@
+TD CM S6 0 12 it4 WM1 WM2 PFlo Tim
+TD CM S6 5 0 it4 WM1 WM2 PFlo Tim
+TD CM S9 0 1 it4 WM1 WM2 PFlo Tim
+TD TD S6 0 16 it4 WM1 WM2 PFlo Tim
+TD TD S6 5 4 it4 WM1 WM2 PFlo Tim
+TD TD S9 0 5 it4 WM1 WM2 PFlo Tim
+TD TD S6 0 5 it4 WM1 WM2 PFlo Tim
+TPa TPa S10 0 12 it3 WM1 PFlo Tim
+TPa TPa S11 0 12 it3 WM1 PFlo Tim
+TPa TPa S12 0 12 it3 WM1 PFlo Tim
+TPa TPa S13 0 12 it3 WM1 PFlo Tim
+TPb TPb S10 0 1 it3 WM2 PFlo Tim
+TPb TPb S11 0 1 it3 WM2 PFlo Tim
+TPb TPb S12 0 1 it3 WM2 PFlo Tim
+TPb TPb S13 0 1 it3 WM2 PFlo Tim

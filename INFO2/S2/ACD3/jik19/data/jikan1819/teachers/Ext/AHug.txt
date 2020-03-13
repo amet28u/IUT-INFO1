@@ -1,0 +1,9 @@
+Couleur 120 226 187
+Info "Anne-Lise Huguenot-Noel"
+
+ContrainteReguliere interdit 0 all
+ContrainteReguliere interdit 1 all
+ContrainteReguliere interdit 2 all
+ContrainteReguliere interdit 3 all
+ContrainteReguliere interdit 4 xxxxxxxxxxxxooooooooxx
+ContrainteReguliere interdit 5 all

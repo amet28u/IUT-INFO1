@@ -1,0 +1,22 @@
+Couleur 157 245 183
+Info "Damien Jamet"
+
+ContrainteReguliere interdit 2 all
+
+RelacheContrainte S36 2 all
+ContrainteOccasionnelle interdit S38 0 all
+ContrainteOccasionnelle interdit S38 1 all
+ContrainteOccasionnelle interdit S38 3 all
+ContrainteOccasionnelle interdit S38 4 all
+ContrainteOccasionnelle interdit S38 5 all
+ContrainteOccasionnelle interdit S39 0 all
+ContrainteOccasionnelle interdit S39 1 all
+ContrainteOccasionnelle interdit S39 3 all
+ContrainteOccasionnelle interdit S39 4 all
+ContrainteOccasionnelle interdit S39 5 all
+ContrainteOccasionnelle interdit S40 0 all
+ContrainteOccasionnelle interdit S40 1 all
+ContrainteOccasionnelle interdit S45 3 all
+RelacheContrainte S37 2 ooooooooooooxxxxoooooo
+ContrainteOccasionnelle interdit S37 3 all
+RelacheContrainte S46 2 all

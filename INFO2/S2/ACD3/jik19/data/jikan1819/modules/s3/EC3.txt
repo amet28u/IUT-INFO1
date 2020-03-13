@@ -1,0 +1,78 @@
+Couleur 250 220 187
+Info "Communication professionnelle"
+Lot TDx
+  AliasLot TD
+  AffichageDuNom
+  Numerotation
+  Tache TDx
+    Cout TD
+    Duree 4
+    Etudiant Info2x
+    Enseignant ARic
+    Salle SCC
+    Repetition 7
+Lot TDy
+  AliasLot TD
+  AffichageDuNom
+  Numerotation
+  Tache TDy
+    Cout TD
+    Duree 4
+    Etudiant Info2y
+    Enseignant ARic
+    Salle SCC
+    Repetition 7
+Lot TPa
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TQa
+    Cout TP
+    Duree 4
+    Etudiant Info2A
+    Enseignant ARic
+    Salle SCC
+    Repetition 2
+  Tache TPa
+    Cout TP
+    Duree 4
+    Etudiant Info2A
+    Enseignant ARic
+    Salles 2 Alab Res
+    Repetition 6
+Lot TPb
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TQb
+    Cout TP
+    Duree 4
+    Etudiant Info2B
+    Enseignant ARic
+    Salle SCC
+    Repetition 2
+  Tache TPb
+    Cout TP
+    Duree 4
+    Etudiant Info2B
+    Enseignant ARic
+    Salles 2 Alab Res
+    Repetition 6
+Lot TPc
+  AliasLot TP
+  AffichageDuNom
+  Numerotation
+  Tache TQc
+    Cout TP
+    Duree 4
+    Etudiant Info2C
+    Enseignant ARic
+    Salle SCC
+    Repetition 2
+  Tache TPc
+    Cout TP
+    Duree 4
+    Etudiant Info2C
+    Enseignant ARic
+    Salles 2 Alab Res
+    Repetition 6
