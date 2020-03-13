@@ -1,0 +1,20 @@
+Exercice 1:
+
+I.    Dans le fichier ~/.bashrc :
+      echo $(uname -s -m)
+II.   Programme novice.sh
+III.  alias macommande='du'
+IV.   alias macommande2='cd ..'
+
+Exercice 2:
+
+I.    Programme traitement.sh
+
+Exercice 3:
+
+I.    Programme adduser.sh
+
+Exercice 4:
+
+ I.   Programme delete.sh
+ II.  Programme poub.sh
