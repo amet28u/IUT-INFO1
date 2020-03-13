@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head><title>Even TP Prim2D</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  </head>
+  <body bgcolor="#3FBFAF" text="#4F2F1F">
+    <h2>SI - Canevas du TP sur les primitives graphiques OpenGL </h2>
+    <p> Compl&eacute;ter le fichier <tt>Drawing.java</tt> pour afficher les
+        figures suivantes en utilisant pour chacune un type de primitive
+        OpenGL. </p>
+    <dl>
+      <dt> R&egrave;gles &agrave; respecter -- Dans l'ordre :
+      <dd> 1) Respecter les trac&eacute;s sp&eacute;cifi&eacute;s (des
+              exemples sont fournis ci-dessous).
+      <dd> 2) Utiliser <b>le moins possible</b> de blocs
+              <tt>glBegin / glEnd</tt>.
+      <dd> 3) Pour chaque figure o&ugrave; il n'est pas
+              sp&eacute;cifi&eacute;, minimiser le nombre de sommets
+              utilis&eacute;s dans chaque bloc.
+      <dd> 4) Sp&eacute;cifier les sommets dans le sens
+              trigonom&eacute;trique direct pour les figures pleines.
+      <dd> 5) Utiliser une couleur diff&eacute;rente par figure
+              s'&eacute;cartant des couleurs fondamentales pures
+              (blanc, noir, rouge, vert, bleu), sauf quand demand&eacute;.
+    </dl> 
+    <img src="tpPrim2Dbis.png" width="600" height="600"></p>
+    <dl>
+    <dt>Les figures &agrave; tracer sont : </dt>
+      <br>
+      <dd>1) <em>GL_POINTS</em> : 45 points de couleur identique
+              al&eacute;atoirement r&eacute;partis sur une ellipse
+              en utilisant la m&eacute;thode du jardinier, &agrave; placer
+              sur l'espace ]-100,-50[ en X et ]50,100[ en Y. </dd>
+      <dd> La m&eacute;thode du jardinier consiste &agrave; attacher une corde
+           de longueur <tt>C</tt> au deux foyers de l'ellipse, et &agrave;
+           tourner autour des foyers tout en maintenant la corde tendue. </dd>
+      <dd> En principe, un seul bloc <tt>glBegin / glEnd</tt> suffit. </dd>
+      <dl>
+        <dt> Dans le compte-rendu : </dt>
+        <dl> - expliquer le principe d'obtention du trac&eacute;, </dl>
+        <dl> - d&eacute;crire l'impact visuel produit par l'utilisation de
+             <tt>glVertex2f</tt> &agrave; la place de <tt>glVertex2i</tt>, </dl>
+        <dl> - expliquer pr&eacute;cis&eacute;ment le d&eacute;faut
+             observ&eacute; avec <tt>glVertex2i</tt>. </dl>
+      </dl>
+      <br>
+      <dd>2) <em>GL_LINES</em> : deux spirales en tiret&eacute;s (48 sommets
+              en tout), concentriques, ne se recoupant pas,
+              avec une couleur unie diff&eacute;rente pour chacune d'elle,
+              et &agrave; placer sur l'espace ]-50,0[ en X et ]50,100[ en Y.
+              </dd>
+      <dd> En principe, un seul bloc <tt>glBegin / glEnd</tt> suffit. </dd>
+      <dl>
+        <dt> Dans le compte-rendu : </dt>
+        <dl> - expliquer le principe d'obtention du trac&eacute;. </dl>
+      </dl>
+      <br>
+      <dd>3) <em>GL_LINE_STRIP</em> : deux triangles avec une ar&egrave;te
+              commune, l'un orient&eacute; vers le haut et l'autre vers le
+              bas, tous les deux inscrits dans un carr&eacute;,
+              avec une couleur &agrave; dominante verte, &agrave; placer sur
+              l'espace ]0,50[ en X et ]50,100[ en Y. </dd>
+      <dd> En principe, un seul bloc <tt>glBegin / glEnd</tt> suffit. </dd>
+      <dl>
+        <dt> Dans le compte-rendu : </dt>
+        <dl> - indiquer l'ordre dans lequel les sommets sont
+             sp&eacute;cifi&eacute;s. </dl>
+      </dl>
+      <br>
+      <dd>4) <em>GL_LINE_LOOP</em> :
+              une forme de coeur en tiret&eacute;s,
+              avec 2N tirets o&ugrave; N est un entier al&eacute;atoirement
+              choisi entre 10 et 24, avec une couleur unie diff&eacute;rente
+              pour chaque moiti&eacute; du coeur,
+              et &agrave; placer sur l'espace ]50,100[ en X et ]50,100[ en Y.
+              </dd>
+      <dd> En principe, un seul bloc <tt>glBegin / glEnd</tt> suffit. </dd>
+      <dl>
+        <dt> Dans le compte-rendu : </dt>
+        <dl> - indiquer l'ordre dans lequel les sommets sont
+             sp&eacute;cifi&eacute;s. </dl>
+      </dl>
+      <br>
+      <dd>5) <em>GL_TRIANGLES</em> : une lettre 'P' form&eacute;e de trois
+              triangles entrem&eacute;l&eacute;s, un &agrave; dominante rouge,
+              un &agrave; dominante verte et un &agrave; dominante bleue
+              (attention, bien respecter l'ordre des recouvrements),
+              &agrave; placer sur l'espace ]-100,0[ en X et ]0,50[ en Y. </dd>
+      <dd> En principe, un seul bloc <tt>glBegin / glEnd</tt> suffit. </dd>
+      <dl>
+        <dt> Dans le compte-rendu : </dt>
+        <dl> - indiquer comment les sommets sont choisis et l'ordre dans
+             lequel ils sont sp&eacute;cifi&eacute;s. </dl>
+      </dl>
+      <br>
+      <dd>6) <em>GL_TRIANGLE_STRIP</em> :
+              une lettre 'C' tr&egrave;s &eacute;paisse
+              avec des angles droits, de couleur uniforme &agrave; dominante
+              rouge, <b>sans recouvrement</b> entre les diff&eacute;rents
+              triangles, &agrave; placer sur l'espace ]0,100[ en X
+              et ]-100,0[ en Y. </dd>
+      <dd> En principe, un seul bloc <tt>glBegin / glEnd</tt> suffit. </dd>
+      <dl>
+        <dt> Dans le compte-rendu : </dt>
+        <dl> - indiquer l'ordre dans lequel les sommets sont
+             sp&eacute;cifi&eacute;s. </dl>
+      </dl>
+      <br>
+      <dd>7) <em>GL_TRIANGLE_FAN</em> : une lettre 'W' &eacute;paisse avec
+              une &eacute;chancrure au milieu en haut, avec une couleur
+              unie de dominante rouge, &agrave; placer sur l'espace
+              ]-50,0[ en X et ]0,50[ en Y.  </dd>
+      <dl>
+        <dt> Dans le compte-rendu : </dt>
+        <dl> - indiquer le nombre de bloc <tt>glBegin / glEnd</tt>
+             utilis&eacute;s et l'ordre dans lequel les sommets sont
+             sp&eacute;cifi&eacute;s. </dl>
+      </dl>
+      <br>
+      <dd>8) <em>GL_QUADS</em> : une lettre 'T' plus &eacute;paisse au centre
+              et en bas, de couleur uniforme &agrave; dominante verte,
+              &agrave; placer sur l'espace ]-100,0[ en X et ]-100,0[
+              en Y, attenant &agrave; la barre bleue de sorte qu'aucun trou
+              n'apparaisse entre la barre et le T.
+              Pour cela, les coordonn&eacute;es du coin haut droit doivent
+              &ecirc;tre (-2,-5) et celles du coin haut gauche (-98,-5). </dd>
+      <dd> En principe, un seul bloc <tt>glBegin / glEnd</tt> suffit. </dd>
+      <dl>
+        <dt> Dans le compte-rendu : </dt>
+        <dl> - indiquer l'ordre dans lequel les sommets sont
+             sp&eacute;cifi&eacute;s. </dl>
+      </dl>
+      <br>
+      <dd>9) <em>GL_QUAD_STRIP</em> : une lettre 'D' tr&egrave;s &eacute;paisse,
+              de couleur &agrave; dominante bleue, avec 32 sommets, et
+              <b>sans recouvrement</b>, &agrave; placer sur l'espace ]0,50[
+              en X et ]0,50[ en Y. </dd>
+      <dd> En principe, un seul bloc <tt>glBegin / glEnd</tt> suffit. </dd>
+      <dl>
+        <dt> Dans le compte-rendu : </dt>
+        <dl> - indiquer le calcul des coordonn&eacute;es des sommets, l'ordre
+             dans lequel les sommets sont sp&eacute;cifi&eacute;s et la
+             pr&eacute;caution &agrave; prendre pour &eacute;viter des trous
+             au niveau de la couture. </dl>
+      </dl>
+      <br>
+      <dd>10) <em>GL_POLYGON</em> : une lettre 'Y' &eacute;paisse avec une
+              couleur lin&eacute;airement interpol&eacute;e entre un bleu
+              pur en haut &agrave; gauche, un vert pur en haut &agrave;
+              droite et un rouge pur en bas au centre, &agrave; placer sur
+              l'espace ]50,100[ en X et ]0,50[ en Y. </dd>
+      <dd> En principe, comme il s'agit de polygones qu'on vexe, trois blocs
+           <tt>glBegin / glEnd</tt> devraient &ecirc;tre n&eacute;cessaires.
+           Toutefois, il existe un cas de figure o&ugrave; la figure peut
+           &ecirc;tre trac&eacute;e avec un seul bloc
+           <tt>glBegin / glEnd</tt>. </dd>
+      <dl>
+        <dt> Dans le compte-rendu : </dt>
+        <dl> - indiquer l'ordre dans lequel les sommets sont
+             sp&eacute;cifi&eacute;s pour chaque polygone, </dl>
+        <dl> - puis noter dans quel cas un seul bloc <tt>glBegin / glEnd</tt>
+             suffit, </dl>
+        <dl> - et en d&eacute;duire une hypoth&egrave;se sur la fa&ccedil;on
+             dont ces polygones sont trac&eacute;s par cette version
+             d'OpenGL. </dl>
+      </dl>
+    </dl>
+  </body>
+</html>
